@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.26b09258.chunk.css",
-    "main.js": "/static/js/main.b0bd319c.chunk.js",
-    "main.js.map": "/static/js/main.b0bd319c.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.012fe9fd.chunk.js": "/static/js/2.012fe9fd.chunk.js",
-    "static/js/2.012fe9fd.chunk.js.map": "/static/js/2.012fe9fd.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.1b05c523ce01fc0e1e0e9c38191a0221.js": "/precache-manifest.1b05c523ce01fc0e1e0e9c38191a0221.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.26b09258.chunk.css.map": "/static/css/main.26b09258.chunk.css.map",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/lilldot/lildotstudio/static/css/main.26b09258.chunk.css",
+    "main.js": "/lilldot/lildotstudio/static/js/main.0d0e65dd.chunk.js",
+    "main.js.map": "/lilldot/lildotstudio/static/js/main.0d0e65dd.chunk.js.map",
+    "runtime~main.js": "/lilldot/lildotstudio/static/js/runtime~main.36662109.js",
+    "runtime~main.js.map": "/lilldot/lildotstudio/static/js/runtime~main.36662109.js.map",
+    "static/js/2.012fe9fd.chunk.js": "/lilldot/lildotstudio/static/js/2.012fe9fd.chunk.js",
+    "static/js/2.012fe9fd.chunk.js.map": "/lilldot/lildotstudio/static/js/2.012fe9fd.chunk.js.map",
+    "index.html": "/lilldot/lildotstudio/index.html",
+    "precache-manifest.1b94960a13b516761fe0da13469aaf8b.js": "/lilldot/lildotstudio/precache-manifest.1b94960a13b516761fe0da13469aaf8b.js",
+    "service-worker.js": "/lilldot/lildotstudio/service-worker.js",
+    "static/css/main.26b09258.chunk.css.map": "/lilldot/lildotstudio/static/css/main.26b09258.chunk.css.map",
+    "static/media/logo.svg": "/lilldot/lildotstudio/static/media/logo.5d5d9eef.svg"
   }
 }
