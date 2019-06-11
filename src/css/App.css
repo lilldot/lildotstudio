@@ -1,33 +1,189 @@
-.App {
-  text-align: center;
+
+.logo {
+  height: 5vmin;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0)
   }
+
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
   }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -50px, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+@-webkit-keyframes fadeInShow {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fadeInShow {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes floatUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+
+  to {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+
+  to {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
+  }
+}
+
+
+.anime-gradientBg:hover {
+  background-image: -webkit-linear-gradient(left, #ccc, #434741);
+  color: #fff;
+  transition: .2s
+}
+
+.anime-gradientText-dark, .anime-gradientText-light {
+  transition: .2s
+}
+
+.anime-gradientText-dark:hover, .anime-gradientText-light:hover {
+  color: #ccc
+}
+
+@media (-webkit-min-device-pixel-ratio:0) {
+  .anime-gradientText-dark, .anime-gradientText-light {
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(left, #ccc, #434741 50%, transparent 0);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .1s .2s;
+    -webkit-background-clip: text
+  }
+
+  .anime-gradientText-light {
+    background-color: #fff
+  }
+
+  .anime-gradientText-dark {
+    background-color: #21183c
+  }
+
+  .anime-gradientText-dark:hover, .anime-gradientText-light:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .4s 0
+  }
+}
+
+.anime-fadeInDown {
+  -webkit-animation: fadeInDown .5s ease-in-out;
+  animation: fadeInDown .5s ease-in-out
+}
+
+.anime-fadeInUp {
+  -webkit-animation: fadeInUp 1s ease-in-out;
+  animation: fadeInUp 1s ease-in-out
+}
+
+.anime-fadeInShow {
+  -webkit-animation: fadeInShow 1s ease-in-out;
+  animation: fadeInShow 1s ease-in-out
+}
+
+.anime-floatUp:hover {
+  -webkit-animation: floatUp .2s ease-in-out forwards;
+  animation: floatUp .2s ease-in-out forwards
+}
+
+.transition {
+  transition: all .1s ease-in !important
+}
+
+.transition-fast {
+  transition: all .2s ease !important
+}
+
+.hover\:translate-r-2px:hover {
+  transform: translateX(2px) !important
+}
+
+.font-sans {
+  font-family: "Open Sans", system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+}
+
+.font-serif {
+  font-family: "Merriweather", Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif
+}
+
+.font-mono {
+  font-family: Fjalla One, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace
 }
