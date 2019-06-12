@@ -4,28 +4,28 @@ import logo from '../img/logo.svg';
 
 function Header() {
   return (
-    <header className="pt-16 font-sans text-sm tracking-wide">
-      <div className="text-center w-full">
-        <img src={logo} className="logo mx-auto" alt="logo" />
-      </div>
-      <nav className="max-w-5xl mx-auto flex md:flex-row flex-col items-center md:justify-between md:px-8">
-        <ul className="flex">
-          <li className="mr-6">
-            <Link className="hover:text-grey-800 uppercase tracking-wide anime-gradientText-dark" to="/">Home</Link>
+    <header className="pt-16 text-sm tracking-widest">
+      <nav className="max-w-6xl mx-auto flex md:flex-row flex-col items-center md:px-8">
+        <ul className="flex flex-1">
+          <li>
+            <Link className="hover:text-grey-800 py-2 pr-3 uppercase tracking-wide anime-gradientText-dark" to="/">Home</Link>
           </li>
-          <li className="mr-6">
-            <Link className="hover:text-grey-800 uppercase tracking-wide anime-gradientText-dark" to="/about">About</Link>
+          <li>
+            <Link className="hover:text-grey-800 py-2 px-3 uppercase tracking-wide anime-gradientText-dark" to="/process">My Process</Link>
           </li>
-          <li className="mr-6">
-            <Link className="hover:text-grey-800 uppercase tracking-wide anime-gradientText-dark" to="/work">Work</Link>
+          <li>
+            <Link className="hover:text-grey-800 py-2 px-3 uppercase tracking-wide anime-gradientText-dark" to="/work">Work</Link>
           </li>
         </ul>
-        <ul className="flex">
-          <li className="ml-6">
-            <Link className="hover:text-grey-800 uppercase tracking-wide anime-gradientText-dark" to="/about">LinkedIn</Link>
+        <div className="flex flex-1">
+          <img src={logo} className="h-12 mx-auto" alt="logo" />
+        </div>
+        <ul className="flex flex-1 justify-end">
+          <li>
+            <a className="hover:text-grey-800 py-2 px-3 uppercase tracking-wide anime-gradientText-dark" target="_blank" href="https://www.linkedin.com/in/klreyes/">LinkedIn</a>
           </li>
-          <li className="ml-6">
-            <Link className="hover:text-grey-800 uppercase tracking-wide anime-gradientText-dark" to="/work">Hire Me</Link>
+          <li>
+            <Link className="hover:text-grey-800 py-2 px-3 uppercase tracking-wide anime-gradientText-dark" to="/contact">Hire Me</Link>
           </li>
         </ul>
       </nav>

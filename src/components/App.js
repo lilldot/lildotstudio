@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/App.css';
 
 import Home from "./Home";
-import About from "./About";
+import Process from "./Process";
 import Work from "./Work";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -15,7 +15,7 @@ function App() {
       <div className="flex flex-col min-h-screen text-grey-darkest antialiased">
         <Header />
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
+        <Route path="/process" component={Process} />
         <Route path="/work" component={Work} />
         <Footer />
       </div>
