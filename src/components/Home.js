@@ -14,7 +14,7 @@ function Home() {
 function Hero() {
   return (
     <section className="max-w-6xl mx-auto flex flex-col md:justify-center p-8 leading-normal mb-24 mt-32">
-      <h1 className="text-5xl sm:text-6xl leading-tight font-serif anime-fadeInUp">
+      <h1 className="text-5xl sm:text-6xl leading-tight font-serif font-medium anime-fadeInUp">
         I design refreshingly easy experiences to help people live happier lives.
       </h1>
       <div className="w-full md:w-2/3 font-sans text-lg sm:text-xl mt-12">
@@ -79,14 +79,14 @@ function Projects() {
 function CaseStudy() {
   return (
     <section className="max-w-6xl mx-auto py-4">
-      <h2 className="text-3xl font-serif tracking-wide font-semibold p-8 mb-8">Case Study</h2>
+      <h2 className="text-3xl font-bold p-8 mb-8 text-center">Case Study</h2>
         <div className="w-full flex flex-col mb-8 px-8">
           <div>
             {/* <div class="bg-fixed w-full h-64 anime-floatUp mb-8" style={{backgroundImage: "url("+Gusto+")"}}></div> */}
             <img className="w-full h-64" src={Quantcast} alt="Facebook Pages Mobile Redesign"/>
             <div className="flex flex-col md:flex-row justify-between mt-10 md:mt-12 mb-16 md:mb-20">
               <div className="w-full md:w-2/5 flex flex-col pr-8">
-                <h3 className="font-medium text-xl leading-tight">Facebook Pages Mobile Redesign
+                <h3 className="font-semibold text-xl leading-tight">Facebook Pages Mobile Redesign
                 </h3>
                 <h4 className="text-gray-600 text-xs my-2 uppercase">UI | UX | Product Thinking</h4>
               </div>
@@ -104,7 +104,7 @@ function CaseStudy() {
             <img className="border" src={Gusto} alt="Gusto Health Benefits"/>
             <div className="flex flex-col md:flex-row justify-between mt-10 mb-16 pr-8">
               <div className="md:w-2/5 flex flex-col pr-8">
-                <h3 className="font-medium text-xl leading-tight">Gusto Benefits Renewal Flow
+                <h3 className="font-semibold text-xl leading-tight">Gusto Benefits Renewal Flow
                 </h3>
                 <h4 className="text-gray-600 text-xs my-2 uppercase">UI | UX | Research | Front-end</h4>
               </div>
@@ -118,7 +118,7 @@ function CaseStudy() {
           </div>
           <div className="md:w-2/5 flex flex-col mb-8 px-8">
             <img src={Quantcast} alt=""/>
-            <h3 className="mt-10 font-medium text-xl leading-tight">Quantcast Measure Redesign
+            <h3 className="mt-10 font-semibold text-xl leading-tight">Quantcast Measure Redesign
             </h3>
             <h4 className="text-gray-600 text-xs my-2 uppercase">UI | UX | Front-end</h4>
             <div className="flex flex-col text-gray-800">
