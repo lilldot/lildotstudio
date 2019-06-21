@@ -44,7 +44,7 @@ export default class Gusto extends React.Component {
 
 function Intro() {
   return (
-    <section className="flex flex-col mt-8">
+    <section className="flex flex-col mt-8 overflow-hidden">
       <div className="md:max-w-4xl mx-auto px-8">
         <h3 className="mt-16 mb-2 text-center text-lg font-bold">Case Study</h3>
         <h1 className="mb-4 text-center text-6xl font-bold leading-none">Gusto Benefits Renewal Flow</h1>
@@ -57,7 +57,14 @@ function Intro() {
       <ScrollAnimation animateIn='fadeInUp'>
         <img className="w-full max-w-6xl mx-auto anime-fadeInUp" src={GustoCover} alt="Gusto Health Benefits"/>
       </ScrollAnimation>
-      <div className="pt-16 bg-gray-100 mb-32">
+    </section>
+  );
+}
+
+function Detail() {
+  return (
+    <div>
+      <section className="pt-16 bg-gray-100 mb-32">
         <div className="max-w-4xl mx-auto px-8 flex flex-col md:flex-row mb-8">
           <div className="md:w-1/3 mb-8">
             <h5 className="uppercase text-xs text-gray-600 ">Status</h5>
@@ -94,14 +101,7 @@ function Intro() {
           <p className="text-3xl leading-tight font-bold">Create a self-serve flow that enables business owners
             to renew benefits they offer to their employees for the upcoming year.</p>
         </div>
-      </div>
-    </section>
-  );
-}
-
-function Detail() {
-  return (
-    <div>
+      </section>
       <section className="max-w-4xl mx-auto mb-32 px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(1)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
@@ -113,7 +113,7 @@ function Detail() {
           the problem and contraints.
         </p>
         <div className="mt-8 flex flex-col md:flex-row">
-          <ScrollAnimation animateIn='pulse' className="md:w-3/5 md:pr-8">
+          <ScrollAnimation animateIn='fadeInUp' className="md:w-3/5 md:pr-8">
             <img className="mb-8" src={renewalIA} alt="Information Architecture"/>
           </ScrollAnimation>
           <div className="md:w-2/5">
@@ -143,7 +143,7 @@ function Detail() {
           <li className="mb-2"><strong>Step 5</strong>: confirm their selections</li>
         </ul>
       </section>
-      <section className="mb-32 md:bg-gray-100 md:pt-8 md:overflow-hidden">
+      <section className="mb-32 md:bg-gray-100 md:pt-16 md:overflow-hidden">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row">
           <ScrollAnimation animateIn='fadeInUp' className="mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Lofi1} alt="Wireframe"/>
@@ -165,26 +165,18 @@ function Detail() {
           I explored a variety of different solutions ranging from low visual prominence to very high visual prominence.
         </p>
         <div className="flex flex-col md:flex-row justify-between mt-8 md:mt-16 mb-32">
-          <div className="md:w-1/3 mb-8 md:pr-16">
+          <ScrollAnimation animateIn='fadeInUp' className="md:w-1/3 mb-8 md:pr-4">
+            <img className="rounded-lg shadow-lg" src={Hifi1} alt="Interaction"/>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' delay={300} className="md:w-1/3 mb-8 md:pl-4">
+            <img className="rounded-lg shadow-lg" src={Hifi2} alt="Interaction"/>
+          </ScrollAnimation>
+          <div className="md:w-1/3 md:pl-8">
             <ul className='font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
               <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
-              <li className="mb-2"><strong>Option 1</strong>: selected label beneath the tab title</li>
-              <li className="mb-2"><strong>Option 2</strong>: represent selection with a shopping cart like badge</li>
-              <li className="mb-2"><strong>Option 3</strong>: highlight the entire selcted tab</li>
-              <li className="mb-2"><strong>Option 4</strong>: use icons to differentiate the selected/unselected states</li>
-              <li className="mb-2"><strong>Option 5</strong>: label the selection in the content area</li>
+              <li className="mb-2"><strong>Option 1</strong>: represent selection with a shopping cart like badge</li>
+              <li className="mb-2"><strong>Option 2</strong>: selected label beneath the tab title</li>
             </ul>
-          </div>
-
-          <div className="md:w-1/3 mb-8 md:pr-4">
-            <ScrollAnimation animateIn='fadeInUp'>
-              <img className="rounded-lg shadow-lg" src={Hifi1} alt="Interaction"/>
-            </ScrollAnimation>
-          </div>
-          <div className="md:w-1/3 md:pl-4">
-            <ScrollAnimation animateIn='fadeInUp' delay={300}>
-              <img className="rounded-lg shadow-lg" src={Hifi2} alt="Interaction"/>
-            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -286,7 +278,7 @@ function Detail() {
           insights and created actionable proposals to better serve the needs of our users.
         </p>
         <div className="flex flex-col md:flex-row justify-between mt-8 md:mt-16 mb-32">
-          <ScrollAnimation animateIn='fadeInLeft' className="md:w-1/3 mb-8 md:pr-16">
+          <ScrollAnimation animateIn='fadeInUp' className="md:w-1/3 mb-8 md:pr-16">
             <img className="rounded-lg shadow-lg" src={Research} alt="Interaction"/>
           </ScrollAnimation>
           <div className="md:w-2/3 mb-8">
@@ -358,7 +350,7 @@ function Detail() {
               <li className="mb-2"><strong>Recommendation 2</strong>:  provide a set of curated options for users to choose what’s most important for them</li>
             </ul>
           </div>
-          <ScrollAnimation animateIn='fadeInRight' className="md:w-1/3 mb-8 md:pr-8">
+          <ScrollAnimation animateIn='fadeInUp' className="md:w-1/3 mb-8 md:pr-8">
             <img className="rounded-lg shadow-lg" src={Redesign} alt="Redesign Research"/>
           </ScrollAnimation>
         </div>

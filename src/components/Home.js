@@ -15,19 +15,18 @@ function Home() {
 function Hero() {
   return (
     <section className="max-w-6xl mx-auto flex flex-col md:justify-center p-8 leading-normal mb-24 mt-32">
-      <ScrollAnimation animateIn='fadeInUp' offset={5}>
-        <h1 className="text-5xl sm:text-6xl leading-tight font-serif font-medium">
+      <ScrollAnimation animateIn='fadeInUp'>
+        <h1 className="text-5xl sm:text-6xl leading-tight font-serif font-semibold">
           I design refreshingly easy experiences to help people live happier lives.
         </h1>
       </ScrollAnimation>
-
-        <div className="w-full md:w-2/3 font-sans text-lg sm:text-xl mt-12">
-          <p>
-              Since 2008, I've designed and occasionally built many mobile and web apps
-              for Apple, Facebook, Gusto and other startups. When I'm not designing, I'm
-              usually traveling, creating art or learning something new.
-          </p>
-        </div>
+      <ScrollAnimation animateIn='fadeInUp' delay={100} className="w-full md:w-2/3 font-sans text-lg sm:text-xl mt-12">
+        <p>
+            Since 2008, I've designed and occasionally built many mobile and web apps
+            for Apple, Facebook, Gusto, Quantcast and other startups. When I'm not designing, I'm
+            usually traveling, making art or learning something new.
+        </p>
+      </ScrollAnimation>
     </section>
   );
 }
@@ -83,7 +82,7 @@ function Projects() {
 function CaseStudy() {
   return (
     <section className="max-w-6xl mx-auto py-4">
-      <h2 className="text-3xl font-bold p-8 mb-8 text-center">Case Study</h2>
+      <h2 className="text-3xl font-bold p-8 mb-8">Case Study</h2>
         <div className="w-full flex flex-col mb-8 px-8">
           <div>
             {/* <div class="bg-fixed w-full h-64 anime-floatUp mb-8" style={{backgroundImage: "url("+Gusto+")"}}></div> */}

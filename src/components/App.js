@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import About from "./About";
 import Work from "./Work";
 import Gusto from "./Gusto";
+import Contact from "./Contact";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/work" component={Work} />
         <Route path="/gusto" component={Gusto} />
+        <Route path="/contact" component={Contact} />
       </div>
       <Footer />
     </Router>
