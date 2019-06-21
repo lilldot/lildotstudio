@@ -2,6 +2,7 @@ import React from 'react';
 import Quantcast from '../img/qc/qc-cover.png';
 import Gusto from '../img/gusto/gusto-health-renewal.png';
 import { Link } from "react-router-dom";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Home() {
   return (
@@ -14,16 +15,19 @@ function Home() {
 function Hero() {
   return (
     <section className="max-w-6xl mx-auto flex flex-col md:justify-center p-8 leading-normal mb-24 mt-32">
-      <h1 className="text-5xl sm:text-6xl leading-tight font-serif font-medium anime-fadeInUp">
-        I design refreshingly easy experiences to help people live happier lives.
-      </h1>
-      <div className="w-full md:w-2/3 font-sans text-lg sm:text-xl mt-12">
-        <p>
-            Since 2008, I've designed and occasionally built many mobile and web apps
-            for Apple, Facebook, Gusto and other startups. When I'm not designing, I'm
-            usually traveling, creating art or learning something new.
-        </p>
-      </div>
+      <ScrollAnimation animateIn='fadeInUp' offset={5}>
+        <h1 className="text-5xl sm:text-6xl leading-tight font-serif font-medium">
+          I design refreshingly easy experiences to help people live happier lives.
+        </h1>
+      </ScrollAnimation>
+
+        <div className="w-full md:w-2/3 font-sans text-lg sm:text-xl mt-12">
+          <p>
+              Since 2008, I've designed and occasionally built many mobile and web apps
+              for Apple, Facebook, Gusto and other startups. When I'm not designing, I'm
+              usually traveling, creating art or learning something new.
+          </p>
+        </div>
     </section>
   );
 }
@@ -83,7 +87,9 @@ function CaseStudy() {
         <div className="w-full flex flex-col mb-8 px-8">
           <div>
             {/* <div class="bg-fixed w-full h-64 anime-floatUp mb-8" style={{backgroundImage: "url("+Gusto+")"}}></div> */}
-            <img className="w-full h-64" src={Quantcast} alt="Facebook Pages Mobile Redesign"/>
+            <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
+              <img className="w-full h-64" src={Quantcast} alt="Facebook Pages Mobile Redesign"/>
+            </ScrollAnimation>
             <div className="flex flex-col md:flex-row justify-between mt-10 md:mt-12 mb-16 md:mb-20">
               <div className="w-full md:w-2/5 flex flex-col pr-8">
                 <h3 className="font-semibold text-xl leading-tight">Facebook Pages Mobile Redesign
@@ -101,7 +107,9 @@ function CaseStudy() {
         </div>
         <div className="w-full flex flex-col md:flex-row">
           <div className="md:w-3/5 flex flex-col mb-8 px-8">
-            <img className="border" src={Gusto} alt="Gusto Health Benefits"/>
+            <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
+              <img className="border" src={Gusto} alt="Gusto Health Benefits"/>
+            </ScrollAnimation>
             <div className="flex flex-col md:flex-row justify-between mt-10 mb-16 pr-8">
               <div className="md:w-2/5 flex flex-col pr-8">
                 <h3 className="font-semibold text-xl leading-tight">Gusto Benefits Renewal Flow
@@ -117,7 +125,9 @@ function CaseStudy() {
             </div>
           </div>
           <div className="md:w-2/5 flex flex-col mb-8 px-8">
-            <img src={Quantcast} alt=""/>
+            <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
+              <img src={Quantcast} alt=""/>
+            </ScrollAnimation>
             <h3 className="mt-10 font-semibold text-xl leading-tight">Quantcast Measure Redesign
             </h3>
             <h4 className="text-gray-600 text-xs my-2 uppercase">UI | UX | Front-end</h4>

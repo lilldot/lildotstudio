@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/App.css';
+import "animate.css/animate.min.css";
 
 import Home from "./Home";
 import Header from "./Header";
@@ -13,14 +14,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen text-grey-darkest antialiased">
+      <div className="flex flex-col min-h-screen antialiased">
         <Header />
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/work" component={Work} />
         <Route path="/gusto" component={Gusto} />
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }

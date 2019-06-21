@@ -2,10 +2,12 @@
   "name": "lildotstudio",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://github.com/lilldot/lildotstudio",
+  "homepage": "https://github.com/lilldot/lildotstudio",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "history": "^4.9.0",
     "react": "^16.8.6",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 import GustoCover from '../img/gusto/gusto-health-renewal.png';
 import renewalIA from '../img/gusto/renewal-ia.svg';
 import Lofi1 from '../img/gusto/lofi-1.png';
@@ -52,7 +54,9 @@ function Intro() {
             for the upcoming year.
           </p>
       </div>
-      <img className="w-full max-w-6xl mx-auto anime-fadeInUp" src={GustoCover} alt="Gusto Health Benefits"/>
+      <ScrollAnimation animateIn='fadeInUp'>
+        <img className="w-full max-w-6xl mx-auto anime-fadeInUp" src={GustoCover} alt="Gusto Health Benefits"/>
+      </ScrollAnimation>
       <div className="pt-16 bg-gray-100 mb-32">
         <div className="max-w-4xl mx-auto px-8 flex flex-col md:flex-row mb-8">
           <div className="md:w-1/3 mb-8">
@@ -109,9 +113,9 @@ function Detail() {
           the problem and contraints.
         </p>
         <div className="mt-8 flex flex-col md:flex-row">
-          <div className="md:w-3/5 md:pr-8">
-            <img className="anime-fadeInUp mb-8" src={renewalIA} alt="Information Architecture"/>
-          </div>
+          <ScrollAnimation animateIn='pulse' className="md:w-3/5 md:pr-8">
+            <img className="mb-8" src={renewalIA} alt="Information Architecture"/>
+          </ScrollAnimation>
           <div className="md:w-2/5">
             <ul className='text-gray-800 text-sm font-serif border-l pl-4 leading-more'>
               <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
@@ -141,15 +145,15 @@ function Detail() {
       </section>
       <section className="mb-32 md:bg-gray-100 md:pt-8 md:overflow-hidden">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row">
-          <div className="mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          <ScrollAnimation animateIn='fadeInUp' className="mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Lofi1} alt="Wireframe"/>
-          </div>
-          <div className="mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' delay={300} className="mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Lofi2} alt="Wireframe"/>
-          </div>
-          <div className="mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' delay={500} className="mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Lofi3} alt="Wireframe"/>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
       <section className="max-w-4xl mx-auto px-8">
@@ -171,11 +175,16 @@ function Detail() {
               <li className="mb-2"><strong>Option 5</strong>: label the selection in the content area</li>
             </ul>
           </div>
-          <div className="md:w-1/3 mb-8 md:pr-4 anime-fadeInUp">
-            <img className="rounded-lg shadow-lg" src={Hifi1} alt="Interaction"/>
+
+          <div className="md:w-1/3 mb-8 md:pr-4">
+            <ScrollAnimation animateIn='fadeInUp'>
+              <img className="rounded-lg shadow-lg" src={Hifi1} alt="Interaction"/>
+            </ScrollAnimation>
           </div>
-          <div className="md:w-1/3 md:pl-4 anime-fadeInUp">
-            <img className="rounded-lg shadow-lg" src={Hifi2} alt="Interaction"/>
+          <div className="md:w-1/3 md:pl-4">
+            <ScrollAnimation animateIn='fadeInUp' delay={300}>
+              <img className="rounded-lg shadow-lg" src={Hifi2} alt="Interaction"/>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -200,15 +209,15 @@ function Detail() {
       </section>
       <section className="mb-32">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row">
-          <div className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden anime-fadeInUp">
+          <ScrollAnimation animateIn='fadeInLeft' className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Hifi3} alt="Wireframe"/>
-          </div>
-          <div className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Hifi4} alt="Wireframe"/>
-          </div>
-          <div className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInRight' className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Hifi5} alt="Wireframe"/>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
       <section className="max-w-4xl mx-auto px-8 mb-8 md:mb-12">
@@ -231,21 +240,21 @@ function Detail() {
       </section>
       <section className="mb-32 md:bg-gray-100 md:pt-8 md:overflow-hidden">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row">
-          <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          <ScrollAnimation animateIn='fadeInUp' className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Final1} alt="Wireframe"/>
-          </div>
-          <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' delay={200} className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Final2} alt="Wireframe"/>
-          </div>
-          <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Final3} alt="Wireframe"/>
-          </div>
-          {/* <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          {/* <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Final4} alt="Wireframe"/>
           </div> */}
-          <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          <ScrollAnimation animateIn='fadeInUp' delay={500} className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Final5} alt="Wireframe"/>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
       <section className="max-w-4xl mb-32 mx-auto px-8">
@@ -260,9 +269,9 @@ function Detail() {
           I work closely with engineers on plugging the components in correctly. I would QA and clean up
           the UI before launch to make sure everything look and work as designed.
           </p>
-          <div className="sm:w-1/3 mt-8 sm:mt-0 mx-auto anime-fadeInUp">
+          <ScrollAnimation animateIn='pulse' className="sm:w-1/3 mt-8 sm:mt-0 mx-auto">
             <img className="" src={Code} alt="React and Git"/>
-          </div>
+          </ScrollAnimation>
         </div>
       </section>
       <section className="max-w-4xl mx-auto px-8">
@@ -277,9 +286,9 @@ function Detail() {
           insights and created actionable proposals to better serve the needs of our users.
         </p>
         <div className="flex flex-col md:flex-row justify-between mt-8 md:mt-16 mb-32">
-          <div className="md:w-1/3 mb-8 md:pr-16 anime-fadeInUp">
+          <ScrollAnimation animateIn='fadeInLeft' className="md:w-1/3 mb-8 md:pr-16">
             <img className="rounded-lg shadow-lg" src={Research} alt="Interaction"/>
-          </div>
+          </ScrollAnimation>
           <div className="md:w-2/3 mb-8">
             <ul className='font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
               <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
@@ -306,26 +315,25 @@ function Detail() {
           <li className="mb-2"><strong>Solution 2</strong>: add a review step for users to review the cost of their current plans before they select plans</li>
           <li className="mb-2"><strong>Solution 3</strong>: more plan options and better presentation of their plan details</li>
         </ul>
-
       </section>
       <section className="mb-32 md:bg-gray-100 md:pt-8 md:overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row">
-          <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          <ScrollAnimation animateIn='fadeInUp' className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Post1} alt="Wireframe"/>
-          </div>
-          <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' delay={200} className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Post2} alt="Wireframe"/>
-          </div>
-          <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' delay={300} className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Post0} alt="Wireframe"/>
-          </div>
-          <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' delay={500} className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Post3} alt="Wireframe"/>
-          </div>
-          <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' delay={600} className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Post4} alt="Wireframe"/>
-          </div>
-          {/* <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden anime-fadeInUp">
+          </ScrollAnimation>
+          {/* <div className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Post5} alt="Wireframe"/>
           </div> */}
         </div>
@@ -350,10 +358,9 @@ function Detail() {
               <li className="mb-2"><strong>Recommendation 2</strong>:  provide a set of curated options for users to choose what’s most important for them</li>
             </ul>
           </div>
-          <div className="md:w-1/3 mb-8 anime-fadeInUp md:pr-8">
+          <ScrollAnimation animateIn='fadeInRight' className="md:w-1/3 mb-8 md:pr-8">
             <img className="rounded-lg shadow-lg" src={Redesign} alt="Redesign Research"/>
-          </div>
-
+          </ScrollAnimation>
         </div>
       </section>
     </div>
