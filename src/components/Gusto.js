@@ -15,7 +15,7 @@ import Hifi5 from '../img/gusto/hifi-5.png';
 import Final1 from '../img/gusto/final-1.png';
 import Final2 from '../img/gusto/final-2.png';
 import Final3 from '../img/gusto/final-3.png';
-import Final4 from '../img/gusto/final-4.png';
+// import Final4 from '../img/gusto/final-4.png';
 import Final5 from '../img/gusto/final-5.png';
 import Code from '../img/gusto/code.svg';
 import Research from '../img/gusto/research.png';
@@ -24,7 +24,7 @@ import Post1 from '../img/gusto/post-1.png';
 import Post2 from '../img/gusto/post-2.png';
 import Post3 from '../img/gusto/post-3.png';
 import Post4 from '../img/gusto/post-4.png';
-import Post5 from '../img/gusto/post-5.png';
+// import Post5 from '../img/gusto/post-5.png';
 import Redesign from '../img/gusto/redesign.png';
 
 export default class Gusto extends React.Component {
