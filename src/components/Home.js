@@ -91,7 +91,9 @@ function CaseStudy() {
           <div>
             {/* <div class="bg-fixed w-full h-64 anime-floatUp mb-8" style={{backgroundImage: "url("+Gusto+")"}}></div> */}
             <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
-              <img className="w-full h-64" src={Quantcast} alt="Facebook Pages Mobile Redesign"/>
+              <a href="/facebook">
+                <img className="w-full h-64" src={Quantcast} alt="Facebook Pages Mobile Redesign"/>
+              </a>
             </ScrollAnimation>
             <div className="flex flex-col md:flex-row justify-between mt-10 md:mt-12 mb-16 md:mb-20">
               <div className="w-full md:w-2/5 flex flex-col pr-8">
@@ -111,7 +113,7 @@ function CaseStudy() {
         <div className="w-full flex flex-col md:flex-row">
           <div className="md:w-3/5 flex flex-col mb-8 px-8">
             <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
-              <img className="border" src={Gusto} alt="Gusto Health Benefits"/>
+              <a href="/gusto"><img className="border" src={Gusto} alt="Gusto Health Benefits"/></a>
             </ScrollAnimation>
             <div className="flex flex-col md:flex-row justify-between mt-10 mb-16 pr-8">
               <div className="md:w-2/5 flex flex-col pr-8">
@@ -129,7 +131,9 @@ function CaseStudy() {
           </div>
           <div className="md:w-2/5 flex flex-col mb-8 px-8">
             <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
-              <img src={Quantcast} alt=""/>
+              <a href="/quantcast">
+                <img src={Quantcast} alt=""/>
+              </a>
             </ScrollAnimation>
             <h3 className="mt-10 font-semibold text-xl leading-tight">Quantcast Measure Redesign
             </h3>

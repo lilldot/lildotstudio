@@ -45,7 +45,7 @@ export default class Gusto extends React.Component {
 function Intro() {
   return (
     <section className="flex flex-col mt-8 overflow-hidden">
-      <div className="md:max-w-4xl mx-auto px-8">
+      <div className="md:max-w-3xl mx-auto px-8">
         <h3 className="mt-16 mb-2 text-center text-lg font-bold">Case Study</h3>
         <h1 className="mb-4 text-center text-6xl font-bold leading-none">Gusto Benefits Renewal Flow</h1>
         <h3 className="my-16 text-center uppercase text-sm text-gray-600">UI | UX | Research | Front-end Components</h3>
@@ -65,7 +65,7 @@ function Detail() {
   return (
     <div>
       <section className="pt-16 bg-gray-100 mb-32">
-        <div className="max-w-4xl mx-auto px-8 flex flex-col md:flex-row mb-8">
+        <div className="max-w-3xl mx-auto px-8 flex flex-col md:flex-row mb-8">
           <div className="md:w-1/3 mb-8">
             <h5 className="uppercase text-xs text-gray-600 ">Status</h5>
             <ul className="font-serif">
@@ -96,13 +96,13 @@ function Detail() {
           Create a self-serve flow that enables business owners
           to renew benefits they offer to their employees for the upcoming year.
         </h2> */}
-        <div className="max-w-4xl mx-auto px-8 pb-16">
+        <div className="max-w-3xl mx-auto px-8 pb-16">
           <h5 className="uppercase text-xs text-gray-600">Goal</h5>
           <p className="text-3xl leading-tight font-bold">Create a self-serve flow that enables business owners
             to renew benefits they offer to their employees for the upcoming year.</p>
         </div>
       </section>
-      <section className="max-w-4xl mx-auto mb-32 px-8">
+      <section className="max-w-3xl mx-auto mb-32 px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(1)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           Define Product Goal and IA
@@ -127,7 +127,7 @@ function Detail() {
           </div>
         </div>
       </section>
-      <section className="max-w-4xl mx-auto px-8">
+      <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(2)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           Low Fidelity Flows
@@ -156,7 +156,7 @@ function Detail() {
           </ScrollAnimation>
         </div>
       </section>
-      <section className="max-w-4xl mx-auto px-8">
+      <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(3)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           High Fidelity Interactions
@@ -180,7 +180,7 @@ function Detail() {
           </div>
         </div>
       </section>
-      <section className="max-w-4xl mx-auto px-8">
+      <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(4)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           High Fidelity Information Hierarchy
@@ -200,7 +200,7 @@ function Detail() {
         </ul>
       </section>
       <section className="mb-32">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row">
+        <div className="max-w-3xl mx-auto flex flex-col md:flex-row">
           <ScrollAnimation animateIn='fadeInLeft' className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Hifi3} alt="Wireframe"/>
           </ScrollAnimation>
@@ -212,7 +212,7 @@ function Detail() {
           </ScrollAnimation>
         </div>
       </section>
-      <section className="max-w-4xl mx-auto px-8 mb-8 md:mb-12">
+      <section className="max-w-3xl mx-auto px-8 mb-8 md:mb-12">
         <h5 className="mb-2 text-center uppercase font-bold">(5)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           Visual Design Prototype & User Testing
@@ -249,7 +249,7 @@ function Detail() {
           </ScrollAnimation>
         </div>
       </section>
-      <section className="max-w-4xl mb-32 mx-auto px-8">
+      <section className="max-w-3xl mb-32 mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(6)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           Implement Font-end UI Components
@@ -266,7 +266,7 @@ function Detail() {
           </ScrollAnimation>
         </div>
       </section>
-      <section className="max-w-4xl mx-auto px-8">
+      <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(7)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           Post Launch User Research
@@ -292,7 +292,7 @@ function Detail() {
           </div>
         </div>
       </section>
-      <section className="max-w-4xl mx-auto px-8 mb-8 md:mb-12">
+      <section className="max-w-3xl mx-auto px-8 mb-8 md:mb-12">
         <h5 className="mb-2 text-center uppercase font-bold">(8)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           Post Launch Redesign
@@ -330,7 +330,7 @@ function Detail() {
           </div> */}
         </div>
       </section>
-      <section className="max-w-4xl mx-auto px-8">
+      <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(9)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           Redesign User Research

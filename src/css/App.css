@@ -1,4 +1,26 @@
 
+.phone {
+  border-radius: 34px;
+  border: 15px solid #F7FAFC;
+  overflow: hidden;
+  padding-bottom: 3%;
+}
+.phone img {
+  border-radius: 20px;
+  border: 2px solid white;
+}
+.phone::after {
+  clear: both;
+  content: '';
+  width: 30%;
+  height: 1%;
+  border-radius: 8px;
+  background-color: #2D3748;
+  display: block;
+  margin:auto;
+  margin-top: 3%;
+}
+
 .underline {
    text-decoration: none;
    position: relative;
