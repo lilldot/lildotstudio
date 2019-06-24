@@ -4,7 +4,7 @@ import logo from '../img/logo.svg'; //02, 04, 07, 08
 
 function Header() {
   return (
-    <header className="mt-16 text-sm tracking-widest">
+    <header className="mt-12 sm:mt-16 text-sm tracking-widest">
       <nav className="max-w-6xl mx-auto flex justify-end items-center px-6">
         <ul className="hidden sm:flex sm:flex-1">
           <li>

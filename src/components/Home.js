@@ -103,7 +103,7 @@ function CaseStudy() {
                 <p>Facebook Pages help businesses  engage with their customers and communities.
                   This 2018 consumer mobile redesign made Pages the best presence for a business,
                   and helped people connect, communicate and transact with business owners.</p>
-                <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+                <Link className="mt-3 text-sm" to="/facebook"><span className="underline pb-2">Read More →</span></Link>
               </div>
             </div>
           </div>
