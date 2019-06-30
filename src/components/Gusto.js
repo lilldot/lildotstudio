@@ -56,7 +56,7 @@ function Intro() {
       </div>
       <ScrollAnimation animateIn='fadeInUp'>
         <img className="w-full max-w-6xl mx-auto anime-fadeInUp" src={GustoCover} alt="Gusto Health Benefits"/>
-      </ScrollAnimation>
+        </ScrollAnimation>
     </section>
   );
 }
@@ -308,7 +308,7 @@ function Detail() {
           <li className="mb-2"><strong>Solution 3</strong>: more plan options and better presentation of their plan details</li>
         </ul>
       </section>
-      <section className="mb-32 md:bg-gray-100 md:pt-8 md:overflow-hidden">
+      <section className="mb-32 abstract md:pt-16 md:overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row">
           <ScrollAnimation animateIn='fadeInUp' className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Post1} alt="Wireframe"/>

@@ -3,6 +3,16 @@ import Quantcast from '../img/qc/qc-cover.png';
 import Gusto from '../img/gusto/gusto-health-renewal.png';
 import { Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
+import Redesign1 from '../img/facebook/redesign-1.png';
+import Redesign2 from '../img/facebook/redesign-2.png';
+import Redesign3 from '../img/facebook/redesign-3.png';
+import Riders from '../img/riders-for-health.png';
+import Droool from '../img/droool.png';
+import Framework1 from '../img/facebook/framework-1.png';
+import Framework2 from '../img/facebook/framework-2.png';
+import Framework3 from '../img/facebook/framework-3.png';
+import Framework4 from '../img/facebook/framework-4.png';
+import Framework6 from '../img/facebook/framework-6.png';
 
 export default class Home extends React.Component {
  render() {
@@ -10,7 +20,7 @@ export default class Home extends React.Component {
       <main>
         <Hero />
         <CaseStudy />
-        <Process />
+        <Selected />
       </main>
     );
   }
@@ -86,31 +96,70 @@ function Hero() {
 function CaseStudy() {
   return (
     <section className="max-w-6xl mx-auto py-4">
-      <h2 className="text-3xl font-bold p-8 mb-8">Case Study</h2>
+      <h2 className="text-3xl text-center font-bold p-8 mb-8">Case Study</h2>
         <div className="w-full flex flex-col mb-8 px-8">
           <div>
             {/* <div class="bg-fixed w-full h-64 anime-floatUp mb-8" style={{backgroundImage: "url("+Gusto+")"}}></div> */}
-            <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
+            {/* <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
               <a href="/facebook">
                 <img className="w-full h-64" src={Quantcast} alt="Facebook Pages Mobile Redesign"/>
               </a>
-            </ScrollAnimation>
+            </ScrollAnimation> */}
+            <a href="/facebook">
+              <div className="flex items-start fancy bg-blue-100 p-8 md:py-20 md:px-24 overflow-hidden">
+                  <ScrollAnimation animateIn='fadeInUp' className="mx-2 md:mx-4 rounded-xl shadow-lg overflow-hidden">
+                    <img className="" src={Framework1} alt="Wireframe"/>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn='fadeInUp' delay={200} className="mx-2 md:mx-4 rounded-xl shadow-lg overflow-hidden">
+                    <img className="" src={Framework2} alt="Wireframe"/>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn='fadeInUp' delay={300} className="mx-2 md:mx-4 rounded-xl shadow-lg overflow-hidden">
+                    <img className="" src={Framework3} alt="Wireframe"/>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn='fadeInUp' delay={200} className="hidden md:flex mx-2 md:mx-4 rounded-xl shadow-lg overflow-hidden">
+                    <img className="" src={Framework6} alt="Wireframe"/>
+                  </ScrollAnimation>
+              </div>
+            </a>
             <div className="flex flex-col md:flex-row justify-between mt-10 md:mt-12 mb-16 md:mb-20">
               <div className="w-full md:w-2/5 flex flex-col pr-8">
                 <h3 className="font-semibold text-xl leading-tight">Facebook Pages Mobile Redesign
                 </h3>
-                <h4 className="text-gray-600 text-xs my-2 uppercase">UI | UX | Product Thinking</h4>
+                <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2018</strong> | UI | UX | Product Thinking</h4>
               </div>
               <div className="w-full md:w-3/5 flex flex-col text-gray-900">
                 <p>Facebook Pages help businesses  engage with their customers and communities.
-                  This 2018 consumer mobile redesign made Pages the best presence for a business,
+                  This consumer mobile redesign made Pages the best presence for a business,
                   and helped people connect, communicate and transact with business owners.</p>
                 <Link className="mt-3 text-sm" to="/facebook"><span className="underline pb-2">Read More →</span></Link>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col md:flex-row">
+        <div className="w-full flex flex-col mb-8 px-8">
+          <div>
+            {/* <div class="bg-fixed w-full h-64 anime-floatUp mb-8" style={{backgroundImage: "url("+Gusto+")"}}></div> */}
+            <ScrollAnimation className="abstract overflow-hidden" animateIn='fadeIn' animateOut="fadeOut">
+              <a href="/gusto">
+                <img className="w-full" src={Gusto} alt="Gusto Health Benefits"/>
+              </a>
+            </ScrollAnimation>
+            <div className="flex flex-col md:flex-row justify-between mt-10 md:mt-12 mb-16 md:mb-20">
+              <div className="w-full md:w-2/5 flex flex-col pr-8">
+                <h3 className="font-semibold text-xl leading-tight">Gusto Benefits Renewal Flow
+                </h3>
+                <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2016</strong> | UI | UX | Research | Front-end</h4>
+              </div>
+              <div className="w-full md:w-3/5 flex flex-col text-gray-900">
+                <p>Gusto helps small businesses take care of payroll, HR, and benefits.
+                  This project enabled business owners to renew benefits they offer to their employees
+                    for the upcoming year.</p>
+                <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="w-full flex flex-col md:flex-row">
           <div className="md:w-3/5 flex flex-col mb-8 px-8">
             <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
               <a href="/gusto"><img className="border" src={Gusto} alt="Gusto Health Benefits"/></a>
@@ -145,32 +194,119 @@ function CaseStudy() {
               <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
             </div>
           </div>
-        </div>
+        </div> */}
     </section>
   );
 }
 
-function Process() {
+// function Process() {
+//   return (
+//     <section className="max-w-6xl mx-auto py-4 mb-32">
+//       <h2 className="text-3xl font-bold p-8 mb-8">My Process</h2>
+//       <div className="w-full flex flex-col md:flex-row">
+//         <div className="flex-1 px-8">
+//           <h3 className="text-xl font-semibold mb-2">Define</h3>
+//           <p className="text-gray-800">Partner closely with team on defining project scope and timeline.</p>
+//         </div>
+//         <div className="flex-1 px-8">
+//           <h3 className="text-xl font-semibold mb-2">Discover</h3>
+//           <p className="text-gray-800">Quantcast's Measure product helped people analyze their website/mobile app audience.
+//           As the design lead for Quantcast Measure, I led the successful launch of Quantcast's 2015 Measure profile
+//     redesign effort.</p>
+//         </div>
+//         <div className="flex-1 px-8">
+//           <h3 className="text-xl font-semibold mb-2">Design</h3>
+//           <p className="text-gray-800">Quantcast's Measure product helped people analyze their website/mobile app audience.
+//           As the design lead for Quantcast Measure, I led the successful launch of Quantcast's 2015 Measure profile
+//     redesign effort.</p>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+function Selected() {
   return (
     <section className="max-w-6xl mx-auto py-4 mb-32">
-      <h2 className="text-3xl font-bold p-8 mb-8">My Process</h2>
+      <h2 className="text-3xl text-center font-bold p-8 mb-8">Selected Work</h2>
+      <div className="w-full flex flex-col md:flex-row mb-4">
+        <div className="md:w-3/5 flex flex-col mb-8 px-8">
+        <div className="flex items-start dots bg-pink-100 p-12 md:px-24 overflow-hidden">
+          {/* <ScrollAnimation animateIn='fadeInUp' delay={200} className="mx-4 mt-4 rounded-lg shadow-lg overflow-hidden">
+            <img className="" src={Redesign3} alt="Wireframe"/>
+          </ScrollAnimation> */}
+          <ScrollAnimation animateIn='fadeInDown' className="mx-4 rounded-xl shadow-2xl overflow-hidden">
+            <img className="" src={Redesign1} alt="Wireframe"/>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' className="mx-4 mt-6 rounded-xl shadow-xl overflow-hidden">
+            <img className="" src={Redesign2} alt="Wireframe"/>
+          </ScrollAnimation>
+        </div>
+          <div className="flex flex-col md:flex-row justify-between mt-10 mb-16 pr-8">
+            <div className="md:w-2/5 flex flex-col pr-8">
+              <h3 className="font-semibold text-xl leading-tight">Facebook Mobile Redesign
+              </h3>
+              <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2019</strong> | UI | UX</h4>
+            </div>
+            <div className="md:w-3/5 flex flex-col text-gray-800">
+              <p>Facebook's mobile redesign to simplify and declutter the existing UI.</p>
+              <Link className="mt-3 text-sm" to="/"><span className="underline pb-2">Pending →</span></Link>
+            </div>
+          </div>
+        </div>
+        <div className="md:w-2/5 flex flex-col mb-8 px-8">
+          <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
+            <a href="/quantcast">
+              <img src={Quantcast} alt=""/>
+            </a>
+          </ScrollAnimation>
+          <h3 className="mt-10 font-semibold text-xl leading-tight">Quantcast Measure Redesign
+          </h3>
+          <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2015</strong> | UI | UX | Front-end</h4>
+          <div className="flex flex-col text-gray-800">
+            <p>Quantcast's Measure product helped people analyze their website/mobile app audience.
+            As the design lead for Quantcast Measure, I led the successful launch of Quantcast's Measure profile
+      redesign.</p>
+            <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+          </div>
+        </div>
+      </div>
       <div className="w-full flex flex-col md:flex-row">
-        <div className="flex-1 px-8">
-          <h3 className="text-xl font-semibold mb-2">Define</h3>
-          <p className="text-gray-800">Partner closely with team on defining project scope and timeline.</p>
+        <div className="md:w-2/5 flex flex-col mb-8 px-8">
+          <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
+            <a href="/quantcast">
+              <img src={Riders} alt=""/>
+            </a>
+          </ScrollAnimation>
+          <h3 className="mt-10 font-semibold text-xl leading-tight">Riders for Health
+          </h3>
+          <h4 className="text-gray-600 text-xs my-2 uppercase">UI | UX | Front-end</h4>
+          <div className="flex flex-col text-gray-800">
+            <p>Quantcast's Measure product helped people analyze their website/mobile app audience.
+            As the design lead for Quantcast Measure, I led the successful launch of Quantcast's 2015 Measure profile
+      redesign effort.</p>
+            <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+          </div>
         </div>
-        <div className="flex-1 px-8">
-          <h3 className="text-xl font-semibold mb-2">Discover</h3>
-          <p className="text-gray-800">Quantcast's Measure product helped people analyze their website/mobile app audience.
-          As the design lead for Quantcast Measure, I led the successful launch of Quantcast's 2015 Measure profile
-    redesign effort.</p>
+        <div className="md:w-3/5 flex flex-col mb-8 px-8">
+          <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
+            <a href="/gusto"><img className="border" src={Droool} alt="Gusto Health Benefits"/></a>
+          </ScrollAnimation>
+          <div className="flex flex-col md:flex-row justify-between mt-10 mb-16 pr-8">
+            <div className="md:w-2/5 flex flex-col pr-8">
+              <h3 className="font-semibold text-xl leading-tight">Droool
+              </h3>
+              <h4 className="text-gray-600 text-xs my-2 uppercase">UI | UX | Research | Front-end</h4>
+            </div>
+            <div className="md:w-3/5 flex flex-col text-gray-800">
+              <p>Gusto helps small businesses take care of payroll, HR, and benefits.
+                This 2016 project enabled business owners to renew benefits they offer to their employees
+                  for the upcoming year.</p>
+              <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+            </div>
+          </div>
         </div>
-        <div className="flex-1 px-8">
-          <h3 className="text-xl font-semibold mb-2">Design</h3>
-          <p className="text-gray-800">Quantcast's Measure product helped people analyze their website/mobile app audience.
-          As the design lead for Quantcast Measure, I led the successful launch of Quantcast's 2015 Measure profile
-    redesign effort.</p>
-        </div>
+
       </div>
     </section>
   );
