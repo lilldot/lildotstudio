@@ -248,19 +248,19 @@ function Detail() {
       <section className="mb-32 md:bg-blue-100 md:pb-24 pt-16 md:overflow-hidden">
 
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row">
-          <ScrollAnimation animateIn='fadeInLeft' className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
-            <img className="" src={Framework3} alt="Wireframe"/>
-          </ScrollAnimation>
           <ScrollAnimation animateIn='fadeInUp' className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
+            <img className="" src={Framework1} alt="Wireframe"/>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn='fadeInUp' delay={200} className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Framework2} alt="Wireframe"/>
           </ScrollAnimation>
           <ScrollAnimation animateIn='fadeInUp' delay={300} className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
-            <img className="" src={Framework1} alt="Wireframe"/>
+            <img className="" src={Framework3} alt="Wireframe"/>
           </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeIn' delay={200} className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
+          <ScrollAnimation animateIn='fadeInUp' delay={500} className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Framework4} alt="Wireframe"/>
           </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeInRight' className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
+          <ScrollAnimation animateIn='fadeInUp' delay={600} className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Framework5} alt="Wireframe"/>
           </ScrollAnimation>
         </div>

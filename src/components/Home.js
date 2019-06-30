@@ -116,7 +116,7 @@ function CaseStudy() {
                   <ScrollAnimation animateIn='fadeInUp' delay={300} className="mx-2 md:mx-4 rounded-xl shadow-lg overflow-hidden">
                     <img className="" src={Framework3} alt="Wireframe"/>
                   </ScrollAnimation>
-                  <ScrollAnimation animateIn='fadeInUp' delay={200} className="hidden md:flex mx-2 md:mx-4 rounded-xl shadow-lg overflow-hidden">
+                  <ScrollAnimation animateIn='fadeInUp' delay={500} className="hidden md:block mx-2 md:mx-4 rounded-xl shadow-lg overflow-hidden">
                     <img className="" src={Framework6} alt="Wireframe"/>
                   </ScrollAnimation>
               </div>
