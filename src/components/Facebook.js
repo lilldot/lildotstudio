@@ -8,6 +8,12 @@ import ScrollIA from '../img/facebook/scroll-ia.png';
 import Scroll from '../img/facebook/scroll.png';
 import Before1 from '../img/facebook/before-1.png';
 import Before2 from '../img/facebook/before-2.png';
+import Before3 from '../img/facebook/before-3.png';
+import Before4 from '../img/facebook/before-4.png';
+
+import Final from '../img/facebook/final.mov';
+import Launchpad from '../img/facebook/launchpad.mov';
+
 import Framework1 from '../img/facebook/framework-1.png';
 import Framework2 from '../img/facebook/framework-2.png';
 import Framework3 from '../img/facebook/framework-3.png';
@@ -18,6 +24,9 @@ import Visual2 from '../img/facebook/visual-2.png';
 import Visual3 from '../img/facebook/visual-3.png';
 import Visual4 from '../img/facebook/visual-4.png';
 import Visual5 from '../img/facebook/visual-5.png';
+import Visual6 from '../img/facebook/visual-6.png';
+import Visual7 from '../img/facebook/visual-7.png';
+import Visual8 from '../img/facebook/visual-8.png';
 import Fillmore from '../img/facebook/Fillmore.png';
 import Lombard from '../img/facebook/Lombard.png';
 import Polk from '../img/facebook/Polk.png';
@@ -26,8 +35,21 @@ import Services from '../img/facebook/Services.png';
 import Shop from '../img/facebook/Shop.png';
 import Groups from '../img/facebook/Groups.png';
 import Events from '../img/facebook/Events.png';
-import GustoCover from '../img/gusto/gusto-health-renewal.png';
-
+import About from '../img/facebook/about.png';
+import Hours from '../img/facebook/hours.png';
+import Highlights from '../img/facebook/highlights.png';
+import Reviews from '../img/facebook/reviews.png';
+import Menu from '../img/facebook/menu.png';
+import Photos from '../img/facebook/photos.png';
+import Photo1 from '../img/facebook/photo-1.png';
+import Photo2 from '../img/facebook/photo-2.png';
+import Photo3 from '../img/facebook/photo-3.png';
+import Photo4 from '../img/facebook/photo-4.png';
+import Photo5 from '../img/facebook/photo-5.png';
+import Photo6 from '../img/facebook/photo-6.png';
+import Photo7 from '../img/facebook/photo-7.png';
+import Photo8 from '../img/facebook/photo-8.png';
+import Media from '../img/facebook/media-experience.mov';
 
 export default class Gusto extends React.Component {
   componentDidMount() {
@@ -51,15 +73,29 @@ function Intro() {
         <h3 className="mt-16 mb-2 text-center text-lg font-bold">Case Study</h3>
         <h1 className="mb-4 md:mx-8 text-center text-6xl font-bold leading-tight">Facebook Pages Mobile Redesign</h1>
         <h3 className="my-16 text-center uppercase text-sm text-gray-600">UI | UX | Product Thinking</h3>
-        <p className="font-serif">Facebook Pages help businesses  engage with their customers and communities.
+        <p className="font-serif">Facebook Pages help 90 million small businesses  engage with their customers and communities.
         This consumer mobile redesign enabled Pages to be best presence for a business, and helped people connect,
         communicate and transact with business owners. The resulting design framework allowed Pages partner teams to optimize for
         their divergent use cases and goals.
-          </p>
+        </p>
+        {/* <div className="flex items-center mb-16"> */}
+          {/* <ScrollAnimation animateIn='fadeInUp' className="w-1/5 mx-4 rounded-lg overflow-hidden shadow-lg">
+            <img src={Before1} alt="Interaction"/>
+          </ScrollAnimation> */}
+          {/* <div className="w-2/5 pl-8 flex flex-col">
+            <ScrollAnimation animateIn='fadeInUp' className="rounded-xl overflow-hidden shadow-lg">
+              <img src={Before1} alt="Interaction" className=""/>
+            </ScrollAnimation>
+          </div> */}
+          {/* <div className="rounded-full border border-black px-4 py-2">→</div> */}
+          <ScrollAnimation animateIn='fadeInUp' className="w-4/5 mx-auto">
+            <video autoPlay loop>
+              <source src={Final} type="video/mp4" />
+            Your browser does not support the video tag.
+            </video>
+          </ScrollAnimation>
+        {/* </div> */}
       </div>
-      <ScrollAnimation animateIn='fadeInUp'>
-        <img className="w-full max-w-6xl mx-auto anime-fadeInUp" src={GustoCover} alt="Gusto Health Benefits"/>
-      </ScrollAnimation>
     </section>
   );
 }
@@ -71,7 +107,16 @@ function Detail() {
         <div className="max-w-3xl mx-auto px-8 mb-8">
           <h5 className="uppercase text-xs text-gray-600 mb-2">Status</h5>
           <ul className="font-serif">
-            <li><strong>Launched</strong> in 2018</li>
+            <li>
+              <strong>Launched</strong> in 2018
+              (<a
+                href="https://techcrunch.com/2018/08/06/facebook-business-pages/"
+                target="_blank"
+                className="hover:line-through"
+                rel="noopener noreferrer"
+                >read more
+              </a>)
+            </li>
           </ul>
         </div>
         <div className="max-w-3xl mx-auto flex flex-col md:flex-row">
@@ -155,17 +200,17 @@ function Detail() {
         </h2>
         <p className="font-serif">Collaborated with Facebook Design Systems and other entity teams to create a consistent entity
            header area across Facebook (e.g. Profile, Events, Marketplace, Groups).</p>
-        <div className="flex flex-col md:flex-row mt-8 md:mt-16 mb-32">
-          <ScrollAnimation animateIn='fadeInUp' className="mb-8 md:pr-4">
+        <div className="flex mt-8 md:mt-16 mb-32">
+          <ScrollAnimation animateIn='fadeInUp' className="mr-2 md:mr-4">
             <img className="rounded-lg shadow-lg" src={Shop} alt="Interaction"/>
           </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeInUp' delay={200} className="mb-8 md:px-4">
+          <ScrollAnimation animateIn='fadeInUp' delay={200} className="mx-2 md:mx-4">
             <img className="rounded-lg shadow-lg" src={Services} alt="Interaction"/>
           </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeInUp' delay={300} className="md:px-4">
+          <ScrollAnimation animateIn='fadeInUp' delay={300} className="mx-2 md:mx-4">
             <img className="rounded-lg shadow-lg" src={Groups} alt="Interaction"/>
           </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeInUp' delay={500} className="md:pl-4">
+          <ScrollAnimation animateIn='fadeInUp' delay={500} className="ml-2 md:ml-4">
             <img className="rounded-lg shadow-lg" src={Events} alt="Interaction"/>
           </ScrollAnimation>
         </div>
@@ -175,6 +220,12 @@ function Detail() {
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           Design Explorations
         </h2>
+        <ScrollAnimation animateIn='fadeIn' className="overflow-hidden mx-8 md:w-3/5 md:mx-auto mb-16">
+          <video autoPlay loop>
+            <source src={Launchpad} type="video/mp4" />
+          Your browser does not support the video tag.
+          </video>
+        </ScrollAnimation>
         <p className="font-serif">This is my favorite part of the design process.
           Divergent thinking and rapid design iterations to push boundaries as well as setting constraints. There were two areas of focus for me:</p>
         <ul className='mt-8 font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
@@ -186,7 +237,7 @@ function Detail() {
       <section className="mb-32 md:bg-blue-100 md:pt-16 md:pb-24 md:overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row">
           <div className="flex mt-8 mx-8 md:mr-4">
-            <ScrollAnimation animateIn='fadeInUp' className="mx-2 rounded-lg shadow-lg overflow-hidden">
+            <ScrollAnimation animateIn='fadeInUp' className="mr-2 rounded-lg shadow-lg overflow-hidden">
               <img className="" src={Fillmore} alt="Wireframe"/>
             </ScrollAnimation>
             <ScrollAnimation animateIn='fadeInUp' delay={200} className="mx-2 rounded-lg shadow-lg overflow-hidden">
@@ -195,23 +246,23 @@ function Detail() {
             {/* <ScrollAnimation animateIn='fadeInUp' delay={500} className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
               <img className="" src={Valencia} alt="Wireframe"/>
             </ScrollAnimation> */}
-            <ScrollAnimation animateIn='fadeInUp' delay={500} className="mx-2 rounded-lg shadow-lg overflow-hidden">
+            <ScrollAnimation animateIn='fadeInUp' delay={500} className="ml-2 rounded-lg shadow-lg overflow-hidden">
               <img className="" src={Lombard} alt="Wireframe"/>
             </ScrollAnimation>
           </div>
           <div className="flex items-start mt-8 mx-8 md:ml-4">
             <div className="flex flex-col">
-            <ScrollAnimation animateIn='fadeInUp' delay={200} className="mb-8 mx-2 rounded-lg shadow-lg overflow-hidden">
-              <img className="" src={Visual1} alt="Wireframe"/>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn='fadeInUp' delay={300} className="mx-2 rounded-lg shadow-lg overflow-hidden">
-              <img className="" src={Visual2} alt="Wireframe"/>
-            </ScrollAnimation>
+              <ScrollAnimation animateIn='fadeInUp' delay={200} className="mb-8 mr-2 rounded-lg shadow-lg overflow-hidden">
+                <img className="" src={Visual1} alt="Wireframe"/>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn='fadeInUp' delay={300} className="mr-2 rounded-lg shadow-lg overflow-hidden">
+                <img className="" src={Visual2} alt="Wireframe"/>
+              </ScrollAnimation>
             </div>
             <ScrollAnimation animateIn='fadeInUp' className="mx-2 rounded-lg shadow-lg overflow-hidden">
               <img className="" src={Visual3} alt="Wireframe"/>
             </ScrollAnimation>
-            <ScrollAnimation animateIn='fadeInUp' delay={500} className="mx-2 rounded-lg shadow-lg overflow-hidden">
+            <ScrollAnimation animateIn='fadeInUp' delay={500} className="ml-2 rounded-lg shadow-lg overflow-hidden">
               <img className="" src={Visual4} alt="Wireframe"/>
             </ScrollAnimation>
           </div>
@@ -223,30 +274,30 @@ function Detail() {
           Design Framework
         </h2>
         <div className="flex pb-16 overflow-hidden">
-          <ScrollAnimation animateIn='fadeInUp' className="mr-4 rounded-lg shadow-lg overflow-hidden">
+          <ScrollAnimation animateIn='fadeInUp' className="mr-2 md:mr-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={FrameworkIA} alt="Wireframe"/>
           </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeInUp' delay={200} className="mx-4 rounded-lg shadow-lg overflow-hidden">
+          <ScrollAnimation animateIn='fadeInUp' delay={200} className="mx-2 md:mx-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Framework} alt="Wireframe"/>
           </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeInUp' delay={300} className="mx-4 rounded-lg shadow-lg overflow-hidden">
+          <ScrollAnimation animateIn='fadeInUp' delay={300} className="mx-2 md:mx-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={ScrollIA} alt="Wireframe"/>
           </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeInUp' delay={500} className="ml-4 rounded-lg shadow-lg overflow-hidden">
+          <ScrollAnimation animateIn='fadeInUp' delay={500} className="ml-2 md:ml-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Scroll} alt="Wireframe"/>
           </ScrollAnimation>
         </div>
-        <p className="font-serif">Stuff</p>
+        <p className="font-serif">I proposed the design framework after various iterations and feedback from partner teams.
+          The framework design system and guidelines enforced consistency across all
+        Pages while providing flexibility for partner teams to optimize for their people problems and goals.</p>
         <ul className='mt-8 font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
           <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
-          <li className="mb-2">Framework explorations to bring consistency across all verticals while providing flexibility for partner teams to optimize for their needs</li>
-          <li className="mb-2">Finalized design proposals and framework guidelines</li>
-          <li className="mb-2">Presented to Pages leads and got their feedback and buy-in</li>
+          <li className="mb-2">Optimized consideration signals, social context, and transactional needs for local businesses</li>
+          <li className="mb-2">Optimized for visual content and discovery of the most relevant information</li>
+          <li className="mb-2">The system is simple and flexible while on brand and consistent with other Facebook experiences</li>
         </ul>
-
       </section>
-      <section className="mb-32 md:bg-blue-100 md:pb-24 pt-16 md:overflow-hidden">
-
+      <section className="mb-32 md:bg-blue-100 md:pb-24 md:pt-16 md:overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row">
           <ScrollAnimation animateIn='fadeInUp' className="mx-8 mt-8 md:mx-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Framework1} alt="Wireframe"/>
@@ -271,55 +322,115 @@ function Detail() {
           Redesign Local Page Components
         </h2>
         <p className="font-serif">
-          Stuff
+          Beyond the design framework, we focused the redesign on consumer experience for local businesses, my design partner and I
+          identified the shared units for all Local Pages, and collaborated with partner teams to refine individual components.
         </p>
         <ul className='mt-8 font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
           <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
-          <li className="mb-2">Define what are the shared framework components for all Local Pages</li>
-          <li className="mb-2">Collaborate with key partner teams to refine individual components</li>
-          <li className="mb-2">Local Discovery on Ratings and Reviews</li>
-          <li className="mb-2">Food & Drink on Menu</li>
+          <li className="mb-2">Highlights to help people stay updated to small businesses they follow</li>
+          <li className="mb-2">About to help people undertand what this business has to offer</li>
+          <li className="mb-2">Ratings and reviews to provide the most important considration signals</li>
+          <li className="mb-2">Menu to help people decide if this business is right for them</li>
         </ul>
       </section>
-      {/* <section className="mb-32 md:bg-gray-100 md:pt-8 md:overflow-hidden">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row">
-          <ScrollAnimation animateIn='fadeInUp' className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
-            <img className="" src={Final1} alt="Wireframe"/>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeInUp' delay={200} className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
-            <img className="" src={Final2} alt="Wireframe"/>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeInUp' className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
-            <img className="" src={Final3} alt="Wireframe"/>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeInUp' delay={500} className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
-            <img className="" src={Final5} alt="Wireframe"/>
-          </ScrollAnimation>
+      <section className="mb-32 md:bg-blue-100 md:pt-16 md:pb-8 md:overflow-hidden">
+        <div className="mx-8 max-w-5xl md:mx-auto flex flex-col md:flex-row">
+          <div className="flex items-start mb-8 md:mr-2">
+            <div className="flex flex-col">
+              <ScrollAnimation animateIn='fadeInUp' className="mr-2 bg-white rounded-lg shadow-lg overflow-hidden">
+                <img className="" src={Visual8} alt="Wireframe"/>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn='fadeInUp' delay={200} className="mt-4 mr-2 rounded-lg shadow-lg overflow-hidden">
+                <img className="" src={Highlights} alt="Wireframe"/>
+              </ScrollAnimation>
+            </div>
+            <ScrollAnimation animateIn='fadeInUp' delay={300} className="mx-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={About} alt="Wireframe"/>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn='fadeInUp' delay={500} className="ml-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={Hours} alt="Wireframe"/>
+            </ScrollAnimation>
+          </div>
+          <div className="flex items-start md:ml-2">
+            <ScrollAnimation animateIn='fadeInUp' className="mr-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={Visual7} alt="Wireframe"/>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn='fadeInUp' delay={300} className="mx-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={Reviews} alt="Wireframe"/>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn='fadeInUp' delay={500} className="ml-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={Menu} alt="Wireframe"/>
+            </ScrollAnimation>
+            {/* <ScrollAnimation animateIn='fadeInUp' delay={500} className="mx-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={Photos} alt="Wireframe"/>
+            </ScrollAnimation> */}
+          </div>
         </div>
-      </section> */}
-      <section className="max-w-3xl mb-32 mx-auto px-8">
+      </section>
+      <section className="max-w-3xl mb-16 mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(7)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
           Refine and Build Platform Components
         </h2>
-        <p className="font-serif">Align with partner teams
+
+        <p className="font-serif">
+          I worked closely with my design parter, engineers, data science and other XFN members to finalize the experience
+          for the key components of the redesign. We achieved a successful launch with a huge gain in topline metrics.
+          Here are some examples of media experience components.
         </p>
-        <div className="flex flex-col md:flex-row justify-between mt-8 mb-32">
-          {/* <ScrollAnimation animateIn='fadeInUp' className="md:w-1/3 mb-8 md:pr-16">
-            <img className="rounded-lg shadow-lg" src={Research} alt="Interaction"/>
-          </ScrollAnimation> */}
-          <div className="md:w-2/3 mb-8">
+        <div className="flex flex-col md:flex-row justify-between mt-16">
+          <ScrollAnimation animateIn='fadeIn' className="shadow-lg rounded-xl md:mr-8 mb-8 overflow-hidden md:w-1/2">
+            <video autoPlay loop>
+              <source src={Media} type="video/mp4" />
+            Your browser does not support the video tag.
+            </video>
+          </ScrollAnimation>
+          <div className="md:w-1/2">
             <ul className='font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
               <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
-              <li className="mb-2">Entity Header</li>
-              <li className="mb-2">About Card</li>
               <li className="mb-2">Media Experience (Cover, Photos, Videos)</li>
-              <li className="mb-2">Highlights  - Co-owned</li>
-              <li className="mb-2">Related Pages  - Co-owned</li>
+              <li className="mb-2">About Card</li>
+              <li className="mb-2">Header Details</li>
+              <li className="mb-2">Highlights - Co-owned</li>
+              <li className="mb-2">Related Pages - Co-owned</li>
               <li className="mb-2">Recommendations - Co-owned</li>
-              <li className="mb-2">Menu - Partner</li>
-              <li className="mb-2">Posts - Partner</li>
+              <li className="mb-2">Menu - Design Partner</li>
+              <li className="mb-2">Posts - Design Partner</li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section className="md:bg-blue-100 md:pt-16 md:pb-8 overflow-hidden">
+        <div className="mx-8 max-w-5xl md:mx-auto flex flex-col md:flex-row">
+          <div className="flex items-start mb-8 md:mr-2">
+            <div className="flex flex-col">
+              <ScrollAnimation animateIn='fadeInUp' className="mr-2 bg-white rounded-lg shadow-lg overflow-hidden">
+                <img className="" src={Photo1} alt="Wireframe"/>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn='fadeInUp' delay={200} className="mt-4 mr-2 rounded-lg shadow-lg overflow-hidden">
+                <img className="" src={Photo2} alt="Wireframe"/>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn='fadeInUp' delay={300} className="mt-4 mr-2 rounded-lg shadow-lg overflow-hidden">
+                <img className="" src={Photo3} alt="Wireframe"/>
+              </ScrollAnimation>
+            </div>
+            <ScrollAnimation animateIn='fadeInUp' delay={500} className="mx-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={Photo4} alt="Wireframe"/>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn='fadeInUp' delay={500} className="ml-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={Photo5} alt="Wireframe"/>
+            </ScrollAnimation>
+          </div>
+          <div className="flex items-start md:ml-2">
+            <ScrollAnimation animateIn='fadeInUp' delay={300} className="mr-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={Photo6} alt="Wireframe"/>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn='fadeInUp' delay={500} className="mx-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={Photo7} alt="Wireframe"/>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn='fadeInUp' className="ml-2 rounded-lg shadow-lg overflow-hidden">
+              <img className="" src={Photo8} alt="Wireframe"/>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
@@ -330,9 +441,9 @@ function Detail() {
 function Pagination() {
   return (
     <section>
-      <ul className="max-w-6xl mx-auto p-8 flex flex-row justify-between">
+      <ul className="max-w-6xl mx-auto p-16 flex flex-row justify-between">
         <li>
-          <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/quantcast">Prev</Link>
+          <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/">Prev</Link>
         </li>
         <li>
           <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/gusto">Next</Link>

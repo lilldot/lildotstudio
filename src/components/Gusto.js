@@ -362,7 +362,7 @@ function Detail() {
 function Pagination() {
   return (
     <section>
-      <ul className="max-w-6xl mx-auto p-8 flex flex-row justify-between">
+      <ul className="max-w-6xl mx-auto p-16 flex flex-row justify-between">
         <li>
           <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/facebook">Prev</Link>
         </li>

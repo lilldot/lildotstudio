@@ -36,7 +36,7 @@ function Hero() {
       </ScrollAnimation>
       <ScrollAnimation animateIn='fadeInUp' delay={100} className="w-full md:w-2/3 font-sans text-lg sm:text-xl mt-12">
         <p className="text-gray-800">
-            Since 2008, I've designed and occasionally built many mobile and web apps
+            Since 2008, I've designed and built mobile and web apps
             for Apple, Facebook, Gusto, Quantcast and other startups. When I'm not designing, I'm
             usually traveling, making art or learning something new.
         </p>
@@ -106,7 +106,7 @@ function CaseStudy() {
               </a>
             </ScrollAnimation> */}
             <a href="/facebook">
-              <div className="flex items-start fancy bg-blue-100 p-8 md:py-20 md:px-24 overflow-hidden">
+              <div className="flex items-start cross-noodle bg-blue-100 p-8 md:py-20 md:px-24 overflow-hidden">
                   <ScrollAnimation animateIn='fadeInUp' className="mx-2 md:mx-4 rounded-xl shadow-lg overflow-hidden">
                     <img className="" src={Framework1} alt="Wireframe"/>
                   </ScrollAnimation>
@@ -128,10 +128,10 @@ function CaseStudy() {
                 <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2018</strong> | UI | UX | Product Thinking</h4>
               </div>
               <div className="w-full md:w-3/5 flex flex-col text-gray-900">
-                <p>Facebook Pages help businesses  engage with their customers and communities.
-                  This consumer mobile redesign made Pages the best presence for a business,
+                <p>Facebook Pages help 90 million small businesses  engage with their customers and communities.
+                  This consumer mobile redesign enabled Pages to be the best presence for a business,
                   and helped people connect, communicate and transact with business owners.</p>
-                <Link className="mt-3 text-sm" to="/facebook"><span className="underline pb-2">Read More →</span></Link>
+                <Link className="mt-3 text-sm" to="/facebook"><span className="hover:line-through pb-2">Read More →</span></Link>
               </div>
             </div>
           </div>
@@ -154,7 +154,7 @@ function CaseStudy() {
                 <p>Gusto helps small businesses take care of payroll, HR, and benefits.
                   This project enabled business owners to renew benefits they offer to their employees
                     for the upcoming year.</p>
-                <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+                <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Read More →</span></Link>
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@ function CaseStudy() {
                 <p>Gusto helps small businesses take care of payroll, HR, and benefits.
                   This 2016 project enabled business owners to renew benefits they offer to their employees
                     for the upcoming year.</p>
-                <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+                <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Read More →</span></Link>
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@ function CaseStudy() {
               <p>Quantcast's Measure product helped people analyze their website/mobile app audience.
               As the design lead for Quantcast Measure, I led the successful launch of Quantcast's 2015 Measure profile
         redesign effort.</p>
-              <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+              <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Read More →</span></Link>
             </div>
           </div>
         </div> */}
@@ -231,7 +231,7 @@ function Selected() {
       <h2 className="text-3xl text-center font-bold p-8 mb-8">Selected Work</h2>
       <div className="w-full flex flex-col md:flex-row mb-4">
         <div className="md:w-3/5 flex flex-col mb-8 px-8">
-        <div className="flex items-start dots bg-pink-100 p-12 md:px-24 overflow-hidden">
+        <div className="flex items-start dots bg-red-100 p-12 md:px-24 overflow-hidden">
           {/* <ScrollAnimation animateIn='fadeInUp' delay={200} className="mx-4 mt-4 rounded-lg shadow-lg overflow-hidden">
             <img className="" src={Redesign3} alt="Wireframe"/>
           </ScrollAnimation> */}
@@ -250,7 +250,7 @@ function Selected() {
             </div>
             <div className="md:w-3/5 flex flex-col text-gray-800">
               <p>Facebook's mobile redesign to simplify and declutter the existing UI.</p>
-              <Link className="mt-3 text-sm" to="/"><span className="underline pb-2">Pending →</span></Link>
+              <Link className="mt-3 text-sm" to="/"><span className="hover:line-through pb-2">Pending →</span></Link>
             </div>
           </div>
         </div>
@@ -267,7 +267,7 @@ function Selected() {
             <p>Quantcast's Measure product helped people analyze their website/mobile app audience.
             As the design lead for Quantcast Measure, I led the successful launch of Quantcast's Measure profile
       redesign.</p>
-            <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+            <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Read More →</span></Link>
           </div>
         </div>
       </div>
@@ -285,7 +285,7 @@ function Selected() {
             <p>Quantcast's Measure product helped people analyze their website/mobile app audience.
             As the design lead for Quantcast Measure, I led the successful launch of Quantcast's 2015 Measure profile
       redesign effort.</p>
-            <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+            <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Read More →</span></Link>
           </div>
         </div>
         <div className="md:w-3/5 flex flex-col mb-8 px-8">
@@ -302,7 +302,7 @@ function Selected() {
               <p>Gusto helps small businesses take care of payroll, HR, and benefits.
                 This 2016 project enabled business owners to renew benefits they offer to their employees
                   for the upcoming year.</p>
-              <Link className="mt-3 text-sm" to="/gusto"><span className="underline pb-2">Read More →</span></Link>
+              <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Read More →</span></Link>
             </div>
           </div>
         </div>

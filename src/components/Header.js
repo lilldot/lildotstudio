@@ -8,7 +8,7 @@ function Header() {
       <nav className="max-w-6xl mx-auto flex justify-end items-center px-6">
         <ul className="hidden sm:flex sm:flex-1">
           <li>
-            <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/work">Case Studies</Link>
+            <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/">Home</Link>
           </li>
           <li>
             <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/about">About</Link>
