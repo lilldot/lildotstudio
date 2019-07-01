@@ -1,5 +1,5 @@
 import React from 'react';
-import Quantcast from '../img/qc/qc-cover.png';
+import Quantcast from '../img/qc/qc-cover-2.png';
 import Gusto from '../img/gusto/gusto-health-renewal.png';
 import { Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -249,8 +249,9 @@ function Selected() {
               <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2019</strong> | UI | UX</h4>
             </div>
             <div className="md:w-3/5 flex flex-col text-gray-800">
-              <p>Facebook's mobile redesign to simplify and declutter the existing UI.</p>
-              <Link className="mt-3 text-sm" to="/"><span className="hover:line-through pb-2">Pending →</span></Link>
+              <p>Facebook's 2019 redesign is the biggest redesign in years aimed to simplify and
+                declutter the existing UI.</p>
+              <Link className="mt-3 text-sm" to="/"><span className="hover:line-through pb-2">See Project →</span></Link>
             </div>
           </div>
         </div>
@@ -267,25 +268,21 @@ function Selected() {
             <p>Quantcast's Measure product helped people analyze their website/mobile app audience.
             As the design lead for Quantcast Measure, I led the successful launch of Quantcast's Measure profile
       redesign.</p>
-            <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Read More →</span></Link>
+            <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">See Project →</span></Link>
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row">
+      {/* <div className="w-full flex flex-col md:flex-row">
         <div className="md:w-2/5 flex flex-col mb-8 px-8">
           <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
-            <a href="/quantcast">
-              <img src={Riders} alt=""/>
-            </a>
+            <img src={Riders} alt=""/>
           </ScrollAnimation>
           <h3 className="mt-10 font-semibold text-xl leading-tight">Riders for Health
           </h3>
-          <h4 className="text-gray-600 text-xs my-2 uppercase">UI | UX | Front-end</h4>
+          <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2013</strong> | UI | UX | Front-end</h4>
           <div className="flex flex-col text-gray-800">
-            <p>Quantcast's Measure product helped people analyze their website/mobile app audience.
-            As the design lead for Quantcast Measure, I led the successful launch of Quantcast's 2015 Measure profile
-      redesign effort.</p>
-            <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Read More →</span></Link>
+            <p>My design solution for #ChimeHack Hackathon to help health workers deliver AIDS medications to remote villages in Lesotho, South Africa.</p>
+            <Link className="mt-3 text-sm" to="/"><span className="hover:line-through pb-2">Coming Soon</span></Link>
           </div>
         </div>
         <div className="md:w-3/5 flex flex-col mb-8 px-8">
@@ -302,12 +299,12 @@ function Selected() {
               <p>Gusto helps small businesses take care of payroll, HR, and benefits.
                 This 2016 project enabled business owners to renew benefits they offer to their employees
                   for the upcoming year.</p>
-              <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Read More →</span></Link>
+              <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Coming Soon</span></Link>
             </div>
           </div>
         </div>
 
-      </div>
+      </div> */}
     </section>
   );
 }

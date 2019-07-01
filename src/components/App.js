@@ -1,4 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+
 import '../css/App.css';
 import "animate.css/animate.min.css";
 
@@ -16,6 +21,8 @@ import "./Nav";
 import { Router, Route } from 'react-router-dom';
 import { createBrowserHistory as createHistory } from 'history';
 const history: History = createHistory()
+library.add(fab, faEnvelope)
+
 
 history.listen((location, action) => {
      // if(`${location.pathname}${location.search}${location.hash}`==="/about") {
