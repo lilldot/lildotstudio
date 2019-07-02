@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default class Footer extends React.Component {
   render() {
     return (
-      <footer className="py-16 flex flex-col text-sm text-gray-500 bg-gray-900 items-center">
+      <footer className="py-16 px-8 text-center flex flex-col text-sm text-gray-500 bg-gray-900 items-center">
         <p>Designed and built by Katherine Reyes. ©2019 All rights reserved.</p>
-        <ul class="flex text-gray-300 mt-4">
+        <ul className="flex text-gray-300 mt-4">
           <li className="transition hover:text-purple-200 floatUp">
             <a href="https://www.instagram.com/lildotstudio/" target="_blank" rel="noopener noreferrer" className="mx-2">
               <FontAwesomeIcon icon={['fab', 'instagram']} />
@@ -27,11 +27,11 @@ export default class Footer extends React.Component {
               <FontAwesomeIcon icon={['fab', 'medium']} />
             </a>
           </li>
-          <li className="transition hover:text-white floatUp">
+          {/* <li className="transition hover:text-white floatUp">
             <a href="mailto:klong128@gmail.com" target="_blank" rel="noopener noreferrer" className="mx-2">
               <FontAwesomeIcon icon={['far', 'envelope']} />
             </a>
-          </li>
+          </li> */}
         </ul>
       </footer>
     );

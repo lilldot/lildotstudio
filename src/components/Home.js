@@ -227,9 +227,9 @@ function CaseStudy() {
 
 function Selected() {
   return (
-    <section className="max-w-6xl mx-auto py-4 mb-32">
+    <section className="max-w-6xl mx-auto py-4 mb-16">
       <h2 className="text-3xl text-center font-bold p-8 mb-8">Selected Work</h2>
-      <div className="w-full flex flex-col md:flex-row mb-4">
+      <div className="w-full flex flex-col md:flex-row">
         <div className="md:w-3/5 flex flex-col mb-8 px-8">
         <div className="flex items-start dots bg-red-100 p-12 md:px-24 overflow-hidden">
           {/* <ScrollAnimation animateIn='fadeInUp' delay={200} className="mx-4 mt-4 rounded-lg shadow-lg overflow-hidden">
@@ -249,13 +249,13 @@ function Selected() {
               <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2019</strong> | UI | UX</h4>
             </div>
             <div className="md:w-3/5 flex flex-col text-gray-800">
-              <p>Facebook's 2019 redesign is the biggest redesign in years aimed to simplify and
-                declutter the existing UI.</p>
+              <p>This mobile and web redesign is Facebook's biggest redesign in years. The cleaner and more modern design
+                 aims to simplify and declutter the existing UI.</p>
               <Link className="mt-3 text-sm" to="/"><span className="hover:line-through pb-2">See Project →</span></Link>
             </div>
           </div>
         </div>
-        <div className="md:w-2/5 flex flex-col mb-8 px-8">
+        <div className="md:w-2/5 flex flex-col px-8 mb-8">
           <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
             <a href="/quantcast">
               <img src={Quantcast} alt=""/>

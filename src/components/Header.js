@@ -33,7 +33,7 @@ function Header() {
         </button>
       </nav>
       <div id="main-nav" className="text-gray-800 flex flex-col px-8 pt-12 text-lg font-medium sm:hidden hidden">
-        <Link className="fadeInDown faster animated py-3 px-4 hover:text-gray-900 hover:line-through" to="/work">Case Studies</Link>
+        <Link className="fadeInDown faster animated py-3 px-4 hover:text-gray-900 hover:line-through" to="/">Home</Link>
         <Link className="fadeInDown faster animated py-3 px-4 hover:text-gray-900 hover:line-through" to="/about">About</Link>
         <a className="fadeInDown faster animated py-3 px-4 hover:text-gray-900 hover:line-through" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/klreyes/">LinkedIn</a>
         <Link className="fadeInDown faster animated pt-3 pb-8 px-4 hover:text-gray-900 hover:line-through border-b-2 border-black" to="/contact">Hire Me</Link>

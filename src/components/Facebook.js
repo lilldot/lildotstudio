@@ -112,7 +112,7 @@ function Detail() {
               (<a
                 href="https://techcrunch.com/2018/08/06/facebook-business-pages/"
                 target="_blank"
-                className="hover:line-through"
+                className="hover:text-gray-900 border-b border-dotted border-gray-900"
                 rel="noopener noreferrer"
                 >read more
               </a>)
