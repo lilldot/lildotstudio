@@ -268,7 +268,7 @@ function Selected() {
             <p>Quantcast's Measure product helped people analyze their website/mobile app audience.
             As the design lead for Quantcast Measure, I led the successful launch of Quantcast's Measure profile
       redesign.</p>
-            <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">See Project →</span></Link>
+            <Link className="mt-3 text-sm" to="/"><span className="hover:line-through pb-2">See Project →</span></Link>
           </div>
         </div>
       </div>

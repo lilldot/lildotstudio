@@ -367,7 +367,7 @@ function Pagination() {
           <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/facebook">Prev</Link>
         </li>
         <li>
-          <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/quantcast">Next</Link>
+          <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/">Next</Link>
         </li>
       </ul>
     </section>

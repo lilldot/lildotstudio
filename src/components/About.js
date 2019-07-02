@@ -22,6 +22,7 @@ function Intro() {
       <div className="md:max-w-5xl mx-auto mt-16 px-8 flex flex-col items-center">
         <div>
           {/* <h2 className="text-3xl font-bold my-8">About Me</h2> */}
+          <ScrollAnimation animateIn='fadeIn'>
           <p className="text-2xl md:text-3xl">I'm a <b>Product Designer</b> with a decade of industry experience <b>crafting simple and delightful product experiences</b>.
             I've designed and shipped over <b>30+ mobile and web products</b> impacting people around the world.
             I always <b>advocate for user needs</b> and strive to create the <b>easiest and most intuitive UX</b> to <b>help people</b> get things done.
@@ -32,6 +33,7 @@ function Intro() {
               <img className="" src={Me} alt="Katherine and her dog"/>
             </ScrollAnimation>
             <div className="ml-8 flex flex-col items-start"> */}
+
               <p className="mt-8 leading-relaxed md:max-w-2xl">Beyond design, I'm an artist, dancer, flutist and avid traveler. I love learning and making things.
                 I draw inspiration from a variety of creative media and I'm always interested in new exciting adventures.
                 Here are some of my <a
@@ -45,7 +47,7 @@ function Intro() {
                   className="font-semibold border-b border-dotted border-gray-800">travel photography</a>.
                   Chances are you probably have seen my photos in Apple products.
               </p>
-
+            </ScrollAnimation>
             {/* </div>
           </div> */}
           {/* <p>Above all else show the data. - Edward Tufte</p> */}
@@ -112,20 +114,20 @@ function Experience() {
       <div className="md:max-w-2xl mx-auto mt-16 px-8">
         <div className="flex flex-col items-center mb-24">
           {/* <p className="mb-4">Let's chat about how I could help you.</p> */}
-          <a className="block border py-2 px-4 rounded-lg border-gray-100 hover:bg-gray-100 hover:text-gray-900 focus:opacity-75" href="/">Hire Me</a>
+          <a className="block border py-2 px-4 rounded-lg border-gray-100 hover:bg-gray-100 hover:text-gray-900 focus:opacity-75" href="/contact">Hire Me</a>
         </div>
         <div>
           <h2 className="text-3xl font-bold my-8">Work History</h2>
           <ul className="leading-relaxed">
             <li>
-                <strong>Facebook</strong> &mdash; <i>Senior Product Designer</i>
+                <strong>Facebook</strong> &mdash; <i>Product Designer &mdash; Design Lead</i>
             </li>
             <li>
-                <strong>Gusto</strong> &mdash; <i>Senior Product Designer</i>
+                <strong>Gusto</strong> &mdash; <i>Product Designer &mdash; Design Lead</i>
       					{/* <br />I design, code, and do everything in between to create a delightful product that our users love! */}
             </li>
             <li>
-                <strong>Quantcast</strong> &mdash; <i>Senior User Experience Designer</i>
+                <strong>Quantcast</strong> &mdash; <i>Senior User Experience Designer &mdash; Design Lead</i>
             </li>
             <li>
                 <strong>Apple</strong> &mdash; <i>User Experience Designer</i>
@@ -163,9 +165,9 @@ function Experience() {
         </div>
         <div className="flex flex-col items-center pt-32 pb-24 border-b">
           <p className="mb-4 text-center">
-            <span role="img" aria-label="hello" className="block text-3xl mb-4">👋</span>
+            <ScrollAnimation animateIn='swing'><span role="img" aria-label="hello" className="block text-3xl mb-4">👋</span></ScrollAnimation>
             I'm currently looking for new opportunities. <br />Let's chat about how I could help you.</p>
-          <a className="mt-2 border py-2 px-4 rounded-lg border-gray-100 hover:bg-gray-100 hover:text-gray-900" href="/">Hire Me</a>
+          <a className="mt-2 border py-2 px-4 rounded-lg border-gray-100 hover:bg-gray-100 hover:text-gray-900" href="/contact">Hire Me</a>
         </div>
       </div>
     </section>

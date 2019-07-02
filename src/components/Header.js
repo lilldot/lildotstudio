@@ -14,7 +14,7 @@ function Header() {
             <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/about">About</Link>
           </li>
         </ul>
-        <Link className="px-3 mx-auto" to="/"><img src={logo} className="h-20 sm:h-16" alt="logo" /></Link>
+        <Link className="mx-auto" to="/"><img src={logo} className="h-20 sm:h-16" alt="logo" /></Link>
         <ul className="hidden sm:flex sm:flex-1 sm:justify-end">
           <li>
             <a className="py-2 mx-3 uppercase tracking-wide underline" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/klreyes/">LinkedIn</a>

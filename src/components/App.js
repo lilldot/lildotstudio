@@ -23,31 +23,31 @@ import { createBrowserHistory as createHistory } from 'history';
 const history: History = createHistory()
 library.add(fab, faEnvelope)
 
-
-history.listen((location, action) => {
-     // if(`${location.pathname}${location.search}${location.hash}`==="/about") {
-     //    document.getElementById('app').classList.add("bg-gray-900");
-     // }
-     // console.log(`The last navigation action was ${action}`)
-     document.getElementById('main-nav').classList.add('hidden');
-     document.getElementById('close-button').classList.add('hidden');
-     document.getElementById('burger-button').classList.remove('hidden');
-})
+// history.listen((location, action) => {
+//      if(`${location.pathname}${location.search}${location.hash}`==="/about") {
+//         document.getElementById('app').classList.add("about");
+//         document.getElementById('app').classList.add("bg-red-100");
+//      }
+//      // console.log(`The last navigation action was ${action}`)
+//      document.getElementById('main-nav').classList.add('hidden');
+//      document.getElementById('close-button').classList.add('hidden');
+//      document.getElementById('burger-button').classList.remove('hidden');
+// })
 
 export default class App extends React.Component {
   // listenScrollEvent = e => {
   //   var app = document.getElementById('app');
-  //   if (window.scrollY < 400) {
-  //     app.classList.add("bg-gray-900")
+  //   if (window.scrollY < 400 && app.classList.contains('about')) {
+  //     app.classList.add("bg-red-100")
   //     app.classList.remove("bg-white")
   //   } else {
   //     app.classList.add("bg-white")
-  //     app.classList.remove("bg-gray-900")
+  //     app.classList.remove("bg-red-100")
   //   }
   // }
-  //
+
   // componentDidMount() {
-  //   document.getElementById('app').classList.add("bg-gray-900");
+  //   document.getElementById('app').classList.add("bg-red-100");
   //   window.addEventListener('scroll', this.listenScrollEvent);
   //   window.scrollTo(0, 0);
   // }
