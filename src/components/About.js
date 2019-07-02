@@ -164,9 +164,8 @@ function Experience() {
           </div>
         </div>
         <div className="flex flex-col items-center pt-32 pb-24 border-b">
-          <p className="mb-4 text-center">
-            <ScrollAnimation animateIn='swing'><span role="img" aria-label="hello" className="block text-3xl mb-4">👋</span></ScrollAnimation>
-            I'm currently looking for new opportunities. <br />Let's chat about how I could help you.</p>
+            <ScrollAnimation animateIn='swing' className="text-3xl mb-4"><span role="img" aria-label="hello">👋</span></ScrollAnimation>
+            <p className="mb-4 text-center max-w-xs mx-auto">I'm currently looking for new opportunities. Let's chat about how I could help you.</p>
           <a className="mt-2 border py-2 px-4 rounded-lg border-gray-100 hover:bg-gray-100 hover:text-gray-900" href="/contact">Hire Me</a>
         </div>
       </div>
