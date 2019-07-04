@@ -46,11 +46,11 @@ function Intro() {
   return (
     <section className="flex flex-col mt-8 overflow-hidden">
       <div className="md:max-w-3xl mx-auto px-8">
-        <h3 className="mt-16 mb-2 text-center text-lg font-bold">Case Study</h3>
-        <h1 className="mb-4 text-center text-6xl font-bold leading-none">Gusto Benefits Renewal Flow</h1>
+        <h3 className="mt-16 mb-2 text-center md:text-lg font-bold">Case Study</h3>
+        <h1 className="mb-4 text-center text-3xl md:text-6xl font-bold leading-none">Gusto Benefits Renewal Flow</h1>
         <h3 className="my-16 text-center uppercase text-sm text-gray-600">UI | UX | Research | Front-end Components</h3>
         <p className="font-serif">Gusto helps small businesses take care of payroll, HR, and benefits.
-          This project enabled business owners to renew benefits they offer to their employees
+          This project enables business owners to renew benefits they offer to their employees
             for the upcoming year.
           </p>
       </div>
@@ -195,8 +195,8 @@ function Detail() {
           <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
           <li className="mb-2"><strong>Option 1</strong>: group plan recommendations by tabs and allow selection of plans at the bottom</li>
           <li className="mb-2"><strong>Option 2</strong>: group plan recommendations by tabs and allow selection of plans at the top</li>
-          <li className="mb-2"><strong>Option 3</strong>: present plan recommendations by wide summary cards, and reveal plan details in a modal</li>
-          <li className="mb-2"><strong>Option 4</strong>: present plan recommendations by tall summary cards, and reveal plan details in a modal</li>
+          <li className="mb-2"><strong>Option 3</strong>: present plan recommendations by wide summary cards and reveal plan details in a modal</li>
+          <li className="mb-2"><strong>Option 4</strong>: present plan recommendations by tall summary cards and reveal plan details in a modal</li>
         </ul>
       </section>
       <section className="mb-32">
@@ -218,7 +218,7 @@ function Detail() {
           Visual Design Prototype & User Testing
         </h2>
         <p className="font-serif">
-          These are the final visual design iteration made on Invision as a clickable prototype.
+          These is the final visual design iteration made on Invision as a clickable prototype.
           The prototype was used for getting final buy-ins from stakeholders, user feedback from
           our customers, and final copy and engineering specs.
         </p>
@@ -256,10 +256,10 @@ function Detail() {
         </h2>
 
         <div className="flex flex-col sm:flex-row justify-between mt-8 md:mt-16 mb-32">
-          <p className="sm:w-2/3 md:pr-16 font-serif">At Gusto, I typically build any new elements/layouts/patterns from scratch,
-          and work with engineers on hooking up the data. For pages that already have existing patterns,
-          I work closely with engineers on plugging the components in correctly. I would QA and clean up
-          the UI before launch to make sure everything look and work as designed.
+          <p className="sm:w-2/3 md:pr-16 font-serif">At Gusto, I typically built new elements/layouts/patterns from scratch,
+          and worked with engineers on hooking up the data. For pages that already have existing patterns,
+          I worked closely with engineers on plugging the components in correctly. I'd also QA and clean up
+          the UI before launch to make sure everything looked and worked as designed.
           </p>
           <ScrollAnimation animateIn='pulse' className="sm:w-1/3 mt-8 sm:mt-0 mx-auto">
             <img className="" src={Code} alt="React and Git"/>
@@ -272,7 +272,7 @@ function Detail() {
           Post Launch User Research
         </h2>
         <p className="font-serif">To further improve the product and to reduce
-          operation cost (after a year of testing the feature in the wild),
+          operation costs (after a year of testing the feature in the wild),
           I conducted 9 user interviews with employers who recently went through
           the renewal flow to learn about their experience. I gathered the top
           insights and created actionable proposals to better serve the needs of our users.
@@ -286,7 +286,7 @@ function Detail() {
               <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
               <li className="mb-2"><strong>Insight 1</strong>: 4 of 9 users had issues with the communication process and found the email threads either confusing or left unanswered</li>
               <li className="mb-2"><strong>Recommendation 1</strong>: providing a phone number and personal guidance is essential for users with specific questions in mind</li>
-              <li className="mb-2"><strong>Insight 2</strong>: 6 of 9 users want to see more granular options in the survey to get more tailored reccomendations</li>
+              <li className="mb-2"><strong>Insight 2</strong>: 6 of 9 users wanted to see more granular options in the survey to get more tailored reccomendations</li>
               <li className="mb-2"><strong>Recommendation 2</strong>:  provide a set of curated options for users to choose what’s most important for them</li>
             </ul>
           </div>
@@ -308,7 +308,7 @@ function Detail() {
           <li className="mb-2"><strong>Solution 3</strong>: more plan options and better presentation of their plan details</li>
         </ul>
       </section>
-      <section className="mb-32 md:abstract md:pt-16 md:overflow-hidden">
+      <section className="pb-8 mb-24 md:pb-0 md:mb-32 abstract md:pt-16 md:overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row">
           <ScrollAnimation animateIn='fadeInUp' className="self-end mx-8 mt-8 md:mx-4 rounded-lg md:rounded-b-none shadow-lg overflow-hidden">
             <img className="" src={Post1} alt="Wireframe"/>
@@ -344,10 +344,9 @@ function Detail() {
           <div className="md:w-2/3 mb-8 md:pr-16">
             <ul className='font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
               <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
-              <li className="mb-2"><strong>Insight 1</strong>: 4 of 9 users had issues with the communication process and found the email threads either confusing or left unanswered</li>
-              <li className="mb-2"><strong>Recommendation 1</strong>: providing a phone number and personal guidance is essential for users with specific questions in mind</li>
-              <li className="mb-2"><strong>Insight 2</strong>: 6 of 9 users want to see more granular options in the survey to get more tailored reccomendations</li>
-              <li className="mb-2"><strong>Recommendation 2</strong>:  provide a set of curated options for users to choose what’s most important for them</li>
+              <li className="mb-2"><strong>Insight 1</strong>: all users liked the new plan summary to help them see their previous plan at a glance</li>
+              <li className="mb-2"><strong>Insight 2</strong>: most users did not want to compare plans upfront and preferred the guided packages from Gusto</li>
+              <li className="mb-2"><strong>Insight 3</strong>: most users found the new package design helped them understand the plan packages well</li>
             </ul>
           </div>
           <ScrollAnimation animateIn='fadeInUp' className="md:w-1/3 mb-8 md:pr-8">

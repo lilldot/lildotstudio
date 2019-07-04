@@ -1,8 +1,8 @@
 {
-  "name": "lildotstudio",
+  "name": "KatherineReyes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/lilldot/lildotstudio",
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
@@ -19,7 +19,7 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "tailwind:css": "tailwind build src/css/tailwind.src.css -c  tailwind.js -o src/css/tailwind.css",
+    "tailwind:css": "tailwind build src/css/tailwind.src.css -c  tailwind.config.js -o src/css/tailwind.css",
     "start": "npm run tailwind:css && react-scripts start",
     "build": "npm run tailwind:css && react-scripts build",
     "test": "react-scripts test",
