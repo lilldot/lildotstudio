@@ -1,6 +1,6 @@
 // Navbar Toggle
 document.addEventListener('DOMContentLoaded', function () {
-  var $nav = document.getElementById('main-nav');
+  var $nav = document.getElementById('mobile-nav');
 
 
   // Get all "navbar-burger" elements

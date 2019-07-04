@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Redesign1 from '../img/facebook/redesign-1.png';
 import Redesign2 from '../img/facebook/redesign-2.png';
-import Redesign3 from '../img/facebook/redesign-3.png';
-import Riders from '../img/riders-for-health.png';
-import Droool from '../img/droool.png';
+// import Redesign3 from '../img/facebook/redesign-3.png';
+// import Riders from '../img/riders-for-health.png';
+// import Droool from '../img/droool.png';
 import Framework1 from '../img/facebook/framework-1.png';
 import Framework2 from '../img/facebook/framework-2.png';
 import Framework3 from '../img/facebook/framework-3.png';
-import Framework4 from '../img/facebook/framework-4.png';
+// import Framework4 from '../img/facebook/framework-4.png';
 import Framework6 from '../img/facebook/framework-6.png';
 
 export default class Home extends React.Component {
@@ -34,12 +34,12 @@ function Hero() {
           I design refreshingly easy experiences to help people live happier lives.
         </h1>
       </ScrollAnimation>
-      <ScrollAnimation animateIn='fadeInUp' delay={100} className="w-full md:w-2/3 font-sans leading-relaxed sm:text-lg md:text-xl mt-8 md:mt-12">
-        <p className="text-gray-900">
+      <ScrollAnimation animateIn='fadeInUp' delay={100} className="w-full md:w-2/3 mt-8 md:mt-12">
+        <h2 className="text-gray-900 font-sans leading-relaxed sm:text-lg md:text-xl">
             Since 2008, I've designed and built mobile and web apps
             for Apple, Facebook, Gusto, Quantcast and other startups. When I'm not designing, I'm
             usually traveling, making art or learning something new.
-        </p>
+        </h2>
       </ScrollAnimation>
     </section>
   );
@@ -257,9 +257,9 @@ function Selected() {
         </div>
         <div className="md:w-2/5 flex flex-col px-8 mb-8">
           <ScrollAnimation animateIn='fadeIn' animateOut="fadeOut">
-            <a href="/quantcast">
-              <img src={Quantcast} alt=""/>
-            </a>
+            <Link to="/quantcast">
+              <img src={Quantcast} alt="Quantcast Redesign"/>
+            </Link>
           </ScrollAnimation>
           <h3 className="mt-10 font-semibold text-xl leading-tight">Quantcast Measure Redesign
           </h3>
@@ -268,7 +268,7 @@ function Selected() {
             <p>Quantcast's Measure product helped people analyze their website/mobile app audience.
             As the design lead for Quantcast Measure, I led the successful launch of Quantcast's Measure profile
       redesign.</p>
-            <Link className="mt-3 text-sm" to="/"><span className="hover:line-through pb-2">Coming Soon →</span></Link>
+            <Link className="mt-3 text-sm" to="/quantcast"><span className="hover:line-through pb-2">See Project →</span></Link>
           </div>
         </div>
       </div>

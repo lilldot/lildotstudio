@@ -24,10 +24,10 @@ function Intro() {
         <div>
           {/* <h2 className="text-3xl font-bold my-8">About Me</h2> */}
           <ScrollAnimation animateIn='fadeIn'>
-          <p className="text-2xl md:text-3xl">I'm a <b>Product Designer</b> with a decade of industry experience <b>crafting simple and delightful product experiences</b>.
+          <h1 className="text-2xl md:text-3xl">I'm a <b>Product Designer</b> with a decade of industry experience <b>crafting simple and delightful product experiences</b>.
             I've designed and shipped over <b>30+ mobile and web products</b> impacting people around the world.
             I always <b>advocate for user needs</b> and strive to create the <b>easiest and most intuitive UX</b> to <b>help people</b> get things done.
-            I <b>sweat the details</b> in UI and I'm <b>thoughtful about what I create</b> as well as what I leave out.</p>
+            I <b>sweat the details</b> in UI and I'm <b>thoughtful about what I create</b> as well as what I leave out.</h1>
 
           {/* <div className="flex mt-8 items-center">
             <ScrollAnimation animateIn='fadeIn' className="w-32 h-32 rounded-full overflow-hidden">
@@ -35,7 +35,7 @@ function Intro() {
             </ScrollAnimation>
             <div className="ml-8 flex flex-col items-start"> */}
 
-              <p className="mt-8 leading-relaxed md:max-w-2xl">Beyond design, I'm an artist, dancer, flutist and avid traveler. I love learning and making things.
+              <h2 className="mt-8 leading-relaxed md:max-w-2xl">Beyond design, I'm an artist, dancer, flutist and avid traveler. I love learning and making things.
                 I draw inspiration from a variety of creative media and I'm always interested in new exciting adventures.
                 Here are some of my <a
                   href="https://www.instagram.com/lildotstudio/"
@@ -47,7 +47,7 @@ function Intro() {
                   rel="noopener noreferrer"
                   className="font-semibold border-b border-dotted border-gray-800">travel photography</a>.
                   Chances are you probably have seen my photos in Apple products.
-              </p>
+              </h2>
             </ScrollAnimation>
             {/* </div>
           </div> */}

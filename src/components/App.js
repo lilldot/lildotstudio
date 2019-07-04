@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
@@ -14,13 +14,16 @@ import About from "./About";
 import Work from "./Work";
 import Gusto from "./Gusto";
 import Facebook from "./Facebook";
+import Quantcast from "./Quantcast";
 import Contact from "./Contact";
+import Page404 from "./Page404";
 import "./Nav";
 
 // import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Router, Route } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory as createHistory } from 'history';
 const history: History = createHistory()
+
 library.add(fab, faEnvelope)
 
 history.listen((location, action) => {
@@ -29,7 +32,7 @@ history.listen((location, action) => {
      //    document.getElementById('app').classList.add("bg-red-100");
      // }
      // console.log(`The last navigation action was ${action}`)
-     document.getElementById('main-nav').classList.add('hidden');
+     document.getElementById('mobile-nav').classList.add('hidden');
      document.getElementById('close-button').classList.add('hidden');
      document.getElementById('burger-button').classList.remove('hidden');
 })
@@ -57,12 +60,16 @@ export default class App extends React.Component {
       <Router history={history}>
         <div className="flex flex-col min-h-screen antialiased">
           <Header />
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/work" component={Work} />
-          <Route path="/gusto" component={Gusto} />
-          <Route path="/facebook" component={Facebook} />
-          <Route path="/contact" component={Contact} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/work" component={Work} />
+            <Route path="/gusto" component={Gusto} />
+            <Route path="/facebook" component={Facebook} />
+            <Route path="/quantcast" component={Quantcast} />
+            <Route path="/contact" component={Contact} />
+            <Route component={Page404} />
+          </Switch>
         </div>
         <Footer />
       </Router>
