@@ -1,7 +1,7 @@
 import React from 'react';
 import Me from '../img/kreyes.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default class About extends React.Component {
   componentDidMount() {
@@ -115,7 +115,7 @@ function Experience() {
       <div className="md:max-w-2xl mx-auto mt-16 px-8">
         <div className="flex flex-col items-center mb-24">
           {/* <p className="mb-4">Let's chat about how I could help you.</p> */}
-          <Link className="border py-2 px-4 rounded-lg border-gray-100 hover:bg-gray-100 hover:text-gray-900" to="/contact">Hire Me</Link>
+          <a className="border py-2 px-4 rounded-lg border-gray-100 hover:bg-gray-100 hover:text-gray-900" href="mailto:klong128@gmail.com">Hire Me</a>
         </div>
         <div>
           <h2 className="text-3xl font-bold my-8">Work History</h2>
@@ -167,7 +167,7 @@ function Experience() {
         <div className="flex flex-col items-center pt-32 pb-24 border-b">
             <ScrollAnimation animateIn='swing' className="text-3xl mb-4"><span role="img" aria-label="hello">👋</span></ScrollAnimation>
             <p className="mb-4 text-center max-w-xs mx-auto">I'm currently looking for new opportunities. Let's chat about how I could help you.</p>
-            <Link className="mt-2 border py-2 px-4 rounded-lg border-gray-100 hover:bg-gray-100 hover:text-gray-900" to="/contact">Hire Me</Link>
+            <a className="mt-2 border py-2 px-4 rounded-lg border-gray-100 hover:bg-gray-100 hover:text-gray-900" href="mailto:klong128@gmail.com">Hire Me</a>
         </div>
       </div>
     </section>

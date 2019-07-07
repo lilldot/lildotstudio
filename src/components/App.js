@@ -15,7 +15,8 @@ import Work from "./Work";
 import Gusto from "./Gusto";
 import Facebook from "./Facebook";
 import Quantcast from "./Quantcast";
-import Contact from "./Contact";
+import FacebookRedesign from "./FacebookRedesign";
+// import Contact from "./Contact";
 import Page404 from "./Page404";
 import "./Nav";
 
@@ -67,7 +68,7 @@ export default class App extends React.Component {
             <Route path="/gusto" component={Gusto} />
             <Route path="/facebook" component={Facebook} />
             <Route path="/quantcast" component={Quantcast} />
-            <Route path="/contact" component={Contact} />
+            {/* <Route path="/contact" component={Contact} /> */}
             <Route component={Page404} />
           </Switch>
         </div>
