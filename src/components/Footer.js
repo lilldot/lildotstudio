@@ -12,11 +12,11 @@ export default class Footer extends React.Component {
               <FontAwesomeIcon icon={['fab', 'instagram']} />
             </a>
           </li>
-          <li className="transition hover:text-orange-200 floatUp">
+          {/* <li className="transition hover:text-orange-200 floatUp">
             <a href="https://www.instagram.com/roamalong/" target="_blank" rel="noopener noreferrer" className="mx-2">
               <FontAwesomeIcon icon={['fab', 'instagram']} />
             </a>
-          </li>
+          </li> */}
           <li className="transition hover:text-pink-200 floatUp">
             <a href="https://dribbble.com/klreyes" target="_blank" rel="noopener noreferrer" className="mx-2">
               <FontAwesomeIcon icon={['fab', 'dribbble']} />

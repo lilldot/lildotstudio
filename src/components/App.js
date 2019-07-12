@@ -15,7 +15,7 @@ import Work from "./Work";
 import Gusto from "./Gusto";
 import Facebook from "./Facebook";
 import Quantcast from "./Quantcast";
-import FacebookRedesign from "./FacebookRedesign";
+// import FacebookRedesign from "./FacebookRedesign";
 // import Contact from "./Contact";
 import Page404 from "./Page404";
 import "./Nav";
@@ -50,11 +50,29 @@ export default class App extends React.Component {
   //   }
   // }
 
-  // componentDidMount() {
-  //   document.getElementById('app').classList.add("bg-red-100");
-  //   window.addEventListener('scroll', this.listenScrollEvent);
-  //   window.scrollTo(0, 0);
-  // }
+  componentDidMount() {
+    // document.getElementById('app').classList.add("bg-red-100");
+    var pagination = document.getElementById('pagination');
+    if (window.innerWidth > 768) {
+      window.addEventListener('scroll', this.listenScrollEvent);
+    } else {
+      if (pagination) {
+        pagination.classList.add('hide');
+      }
+    }
+  }
+
+  listenScrollEvent = e => {
+    var pagination = document.getElementById('pagination');
+    var footer = document.getElementsByTagName('footer')[0];
+    if (pagination) {
+      if (footer.offsetTop - window.scrollY > window.innerHeight) {
+        pagination.classList.remove('hide');
+      } else {
+        pagination.classList.add('hide');
+      }
+    }
+  }
 
   render() {
     return (

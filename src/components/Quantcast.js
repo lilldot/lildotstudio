@@ -25,9 +25,10 @@ function Intro() {
       <div className="md:max-w-3xl mx-auto px-8">
         <h3 className="mt-16 mb-2 text-center md:text-lg font-bold">Selected Work</h3>
         <h1 className="mb-4 md:mx-8 text-center text-3xl md:text-6xl font-bold leading-tight">Quantcast Measure Redesign</h1>
-        <h3 className="my-16 text-center uppercase text-sm text-gray-600">UI | UX | Font-end</h3>
-        <p className="font-serif">Quantcast's Measure product helped people analyze their website/mobile app audience.
-        As the design lead for Quantcast Measure, I led the successful launch of Quantcast's Measure profile redesign.
+        <h3 className="my-16 text-center uppercase text-sm text-gray-600">UI | UX | Front-end Development</h3>
+        <p className="font-serif">Quantcast's Measure product helps users analyze their website and mobile app audience.
+        As the design lead for Quantcast Measure, I led the successful launch of their responsive web
+  redesign across navigation, profile, search, in-app help and data visualizations.
         </p>
         {/* <p>
           I partnered with user research, product and engineering on redesigning
@@ -65,12 +66,20 @@ function Details() {
 function Pagination() {
   return (
     <section>
-      <ul className="max-w-6xl mx-auto p-16 flex flex-row justify-between">
+      <ul className="max-w-6xl mx-auto py-16 px-4 md:px-16 flex flex-row justify-between">
         <li>
-          <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/gusto">Prev</Link>
+          <Link className="py-2 mx-3 text-sm hover:line-through" to="/gusto">← Previous</Link>
         </li>
         <li>
-          <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/facebook">Next</Link>
+          <Link className="py-2 mx-3 text-sm hover:line-through" to="/facebook">Next →</Link>
+        </li>
+      </ul>
+      <ul id="pagination" className="hidden md:flex w-full mx-auto px-4 lg:px-8 text-gray-900 half fixed flex-row justify-between">
+        <li className="rotate">
+          <Link className="py-1 px-2 bg-white rounded-xl opacity-75 hover:opacity-100 text-sm hover:font-semibold" to="/gusto">( Prev )</Link>
+        </li>
+        <li className="rotate rotate-90">
+          <Link className="py-1 px-2 bg-white rounded-xl opacity-75 hover:opacity-100 text-sm hover:font-semibold" to="/facebook">( Next )</Link>
         </li>
       </ul>
     </section>

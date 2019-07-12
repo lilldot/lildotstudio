@@ -96,7 +96,7 @@ function Hero() {
 function CaseStudy() {
   return (
     <section className="max-w-6xl mx-auto py-4">
-      <h2 className="text-3xl text-center font-bold p-8 mb-8">Case Study</h2>
+      <h2 className="text-3xl text-center font-bold p-8 mb-8">Case Studies</h2>
         <div className="w-full flex flex-col mb-8 px-8">
           <div>
             {/* <div class="bg-fixed w-full h-64 anime-floatUp mb-8" style={{backgroundImage: "url("+Gusto+")"}}></div> */}
@@ -125,11 +125,11 @@ function CaseStudy() {
               <div className="w-full md:w-2/5 flex flex-col pr-8">
                 <h3 className="font-semibold text-xl leading-tight">Facebook Pages Mobile Redesign
                 </h3>
-                <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2018</strong> | UI | UX | Product Thinking</h4>
+                <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2018</strong> | UI | UX | Product Strategy</h4>
               </div>
               <div className="w-full md:w-3/5 flex flex-col text-gray-900">
                 <p>Facebook Pages help 90 million small businesses  engage with their customers and communities.
-                  This consumer mobile redesign enables Pages to be the best presence for a business,
+                  This consumer mobile redesign enables Pages to be the best presence for a business
                   and helps people connect, communicate and transact with business owners.</p>
                 <Link className="mt-3 text-sm" to="/facebook"><span className="hover:line-through pb-2">Read More →</span></Link>
               </div>
@@ -148,10 +148,10 @@ function CaseStudy() {
               <div className="w-full md:w-2/5 flex flex-col pr-8">
                 <h3 className="font-semibold text-xl leading-tight">Gusto Benefits Renewal Flow
                 </h3>
-                <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2016</strong> | UI | UX | Research | Front-end</h4>
+                <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2016</strong> | UI | UX | Research | Front-End</h4>
               </div>
               <div className="w-full md:w-3/5 flex flex-col text-gray-900">
-                <p>Gusto helps small businesses take care of payroll, HR, and benefits.
+                <p>Gusto helps small businesses take care of payroll, HR and benefits.
                   This project enables business owners to renew benefits they offer to their employees
                     for the upcoming year.</p>
                 <Link className="mt-3 text-sm" to="/gusto"><span className="hover:line-through pb-2">Read More →</span></Link>
@@ -250,8 +250,9 @@ function Selected() {
             </div>
             <div className="md:w-3/5 flex flex-col text-gray-900">
               <p>This mobile and web redesign is Facebook's biggest redesign in years. The cleaner and more modern design
-                 aims to simplify and declutter the existing UI.</p>
-              <Link className="mt-3 text-sm" to="/"><span className="hover:line-through pb-2">Coming Soon →</span></Link>
+                 aims to simplify and declutter the existing UI. I'm leading the redesign on Pages creation and admin experiences.</p>
+                 {/* Add What I did */}
+              <span className="mt-3 text-sm pb-2">Coming Soon →</span>
             </div>
           </div>
         </div>
@@ -265,9 +266,9 @@ function Selected() {
           </h3>
           <h4 className="text-gray-600 text-xs my-2 uppercase"><strong>2015</strong> | UI | UX | Front-end</h4>
           <div className="flex flex-col text-gray-900">
-            <p>Quantcast's Measure product helped people analyze their website/mobile app audience.
-            As the design lead for Quantcast Measure, I led the successful launch of Quantcast's Measure profile
-      redesign.</p>
+            <p>Quantcast's Measure product helps users analyze their website and mobile app audience.
+            As the design lead for Quantcast Measure, I led the successful launch of their responsive web
+      redesign across navigation, profile, search, in-app help and data visualizations.</p>
             <Link className="mt-3 text-sm" to="/quantcast"><span className="hover:line-through pb-2">See Project →</span></Link>
           </div>
         </div>

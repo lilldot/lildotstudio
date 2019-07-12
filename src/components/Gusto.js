@@ -47,11 +47,11 @@ function Intro() {
     <section className="flex flex-col mt-8 overflow-hidden">
       <div className="md:max-w-3xl mx-auto px-8">
         <h3 className="mt-16 mb-2 text-center md:text-lg font-bold">Case Study</h3>
-        <h1 className="mb-4 text-center text-3xl md:text-6xl font-bold leading-none">Gusto Benefits Renewal Flow</h1>
-        <h3 className="my-16 text-center uppercase text-sm text-gray-600">UI | UX | Research | Front-end Components</h3>
+        <h1 className="mb-4 text-center text-3xl md:text-6xl font-bold leading-tight">Gusto Benefits Renewal Flow</h1>
+        <h3 className="my-16 text-center uppercase text-sm text-gray-600">UI | UX | Research | Front-end Development</h3>
         <p className="font-serif">Gusto helps small businesses take care of payroll, HR, and benefits.
           This project enables business owners to renew benefits they offer to their employees
-            for the upcoming year.
+            for the upcoming year. As the Benefits design lead, I led the initial launch as well as the visual system redesign and interaction improvements a year later.
           </p>
       </div>
       <ScrollAnimation animateIn='fadeInUp'>
@@ -75,9 +75,9 @@ function Detail() {
           </div>
           <div className="md:w-2/3">
             <h5 className="uppercase text-xs text-gray-600 ">Problem</h5>
-            <p className="font-serif">Current benefits renewal process was painful and error prone.
-              Business owners had to manually review benefits options with a insurance broker
-              via pdfs and spreadsheets over emails and phone.</p>
+            <p className="font-serif">Existing benefits renewal process was painful and error prone.
+              Business owners had to manually review benefits options with an insurance broker
+              via pdfs and spreadsheets over emails and phone calls.</p>
 
             {/* <h5 className="mt-8 uppercase text-xs text-gray-600 font-medium">Goal</h5>
             <p className="font-serif">Create a self-serve flow that enables business owners
@@ -99,7 +99,7 @@ function Detail() {
         <div className="max-w-3xl mx-auto px-8 pb-16">
           <h5 className="uppercase text-xs text-gray-600">Goal</h5>
           <p className="text-3xl leading-tight font-bold">Create a self-serve flow that enables business owners
-            to renew benefits they offer to their employees for the upcoming year.</p>
+            to renew their benefits offerings while also reducing Gusto's overhead costs.</p>
         </div>
       </section>
       <section className="max-w-3xl mx-auto mb-32 px-8">
@@ -130,7 +130,7 @@ function Detail() {
       <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(2)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
-          Low Fidelity Flows
+          Low-Fidelity Flows
         </h2>
         <p className="font-serif">This is the divergent thinking part of my process where I get to explore as many layout and interaction ideas as possible.
           I love this step of the process because I really get to push the boundaries and test the impossible.</p>
@@ -138,9 +138,9 @@ function Detail() {
           <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
           <li className="mb-2"><strong>Step 1</strong>: send a survey to the employer for feedback</li>
           <li className="mb-2"><strong>Step 2</strong>: ask the employer to select a benefit to renew</li>
-          <li className="mb-2"><strong>Step 3</strong>: allow the employer to compare different plan recommendations</li>
-          <li className="mb-2"><strong>Step 4</strong>: repeat step 2-3 for each benefit</li>
-          <li className="mb-2"><strong>Step 5</strong>: confirm their selections</li>
+          <li className="mb-2"><strong>Step 3</strong>: allow the employer to compare different plan recommendations - <i>Screen 1</i></li>
+          <li className="mb-2"><strong>Step 4</strong>: repeat step 2-3 for each benefit - <i>Screen 2</i></li>
+          <li className="mb-2"><strong>Step 5</strong>: confirm their selections - <i>Screen 3</i></li>
         </ul>
       </section>
       <section className="mb-32 md:bg-gray-100 md:pt-16 md:overflow-hidden">
@@ -159,7 +159,7 @@ function Detail() {
       <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(3)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
-          High Fidelity Interactions
+          High-Fidelity Interactions
         </h2>
         <p className="font-serif">This is an example of a few treatment options for an interaction problem.
           I explored a variety of different solutions ranging from low visual prominence to very high visual prominence.
@@ -183,7 +183,7 @@ function Detail() {
       <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(4)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
-          High Fidelity Information Hierarchy
+          High-Fidelity Information Hierarchy
         </h2>
         <p className="font-serif">
           This is an example of high fidelity design exploration on layout, user interaction and
@@ -193,10 +193,10 @@ function Detail() {
         </p>
         <ul className='my-8 font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
           <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
-          <li className="mb-2"><strong>Option 1</strong>: group plan recommendations by tabs and allow selection of plans at the bottom</li>
-          <li className="mb-2"><strong>Option 2</strong>: group plan recommendations by tabs and allow selection of plans at the top</li>
-          <li className="mb-2"><strong>Option 3</strong>: present plan recommendations by wide summary cards and reveal plan details in a modal</li>
-          <li className="mb-2"><strong>Option 4</strong>: present plan recommendations by tall summary cards and reveal plan details in a modal</li>
+          {/* <li className="mb-2"><strong>Option 1</strong>: group plan recommendations by tabs and allow selection of plans at the bottom</li> */}
+          <li className="mb-2"><strong>Option 1</strong>: group plan recommendations by tabs and allow selection of plans at the top</li>
+          <li className="mb-2"><strong>Option 2</strong>: show plan recommendations by vertical summary cards and reveal plan details in a modal</li>
+          <li className="mb-2"><strong>Option 3</strong>: present plan recommendations by horizontal summary cards and reveal plan details in a modal</li>
         </ul>
       </section>
       <section className="mb-32">
@@ -215,12 +215,12 @@ function Detail() {
       <section className="max-w-3xl mx-auto px-8 mb-8 md:mb-12">
         <h5 className="mb-2 text-center uppercase font-bold">(5)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
-          Visual Design Prototype & User Testing
+          Visual Design, Prototype and User Testing
         </h2>
         <p className="font-serif">
-          These is the final visual design iteration made on Invision as a clickable prototype.
-          The prototype was used for getting final buy-ins from stakeholders, user feedback from
-          our customers, and final copy and engineering specs.
+          Here are a few examples of the final design pages made into a clickable prototype on Invision.
+          The prototype was used for final buy-in from stakeholders, user feedback from
+          our customers, final content and engineering specs.
         </p>
         {/* <ul className='my-8 md:mb-12 font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
           <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
@@ -252,13 +252,13 @@ function Detail() {
       <section className="max-w-3xl mb-32 mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(6)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
-          Implement Font-end UI Components
+          Implement Font-End UI Components
         </h2>
 
         <div className="flex flex-col sm:flex-row justify-between mt-8 md:mt-16 mb-32">
-          <p className="sm:w-2/3 md:pr-16 font-serif">At Gusto, I typically built new elements/layouts/patterns from scratch,
-          and worked with engineers on hooking up the data. For pages that already have existing patterns,
-          I worked closely with engineers on plugging the components in correctly. I'd also QA and clean up
+          <p className="sm:w-2/3 md:pr-16 font-serif">I built UI components for new patterns and layouts from scratch
+          and worked with engineers to hook up the data. For pages that already had existing components,
+          I worked closely with engineers to ensure they were built and updated correctly. I'd also QA and clean up
           the UI before launch to make sure everything looked and worked as designed.
           </p>
           <ScrollAnimation animateIn='pulse' className="sm:w-1/3 mt-8 sm:mt-0 mx-auto">
@@ -269,13 +269,13 @@ function Detail() {
       <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(7)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
-          Post Launch User Research
+          Post-Launch User Research
         </h2>
-        <p className="font-serif">To further improve the product and to reduce
-          operation costs (after a year of testing the feature in the wild),
-          I conducted 9 user interviews with employers who recently went through
+        <p className="font-serif">To further improve the product and reduce
+          operation costs (a year after initial launch),
+          I interviewed 9 users who recently went through
           the renewal flow to learn about their experience. I gathered the top
-          insights and created actionable proposals to better serve the needs of our users.
+          insights and created actionable proposals to better serve their needs.
         </p>
         <div className="flex flex-col md:flex-row justify-between mt-8 md:mt-16 mb-32">
           <ScrollAnimation animateIn='fadeInUp' className="md:w-1/3 mb-8 md:pr-16">
@@ -285,9 +285,9 @@ function Detail() {
             <ul className='font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
               <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
               <li className="mb-2"><strong>Insight 1</strong>: 4 of 9 users had issues with the communication process and found the email threads either confusing or left unanswered</li>
-              <li className="mb-2"><strong>Recommendation 1</strong>: providing a phone number and personal guidance is essential for users with specific questions in mind</li>
-              <li className="mb-2"><strong>Insight 2</strong>: 6 of 9 users wanted to see more granular options in the survey to get more tailored reccomendations</li>
-              <li className="mb-2"><strong>Recommendation 2</strong>:  provide a set of curated options for users to choose what’s most important for them</li>
+              <li className="mb-2"><strong>Recommendation 1</strong>: providing a phone number and personal guidance are essential for users with specific questions in mind</li>
+              <li className="mb-2"><strong>Insight 2</strong>: 6 of 9 users wanted to see more granular options in the survey to get more tailored recommendations</li>
+              <li className="mb-2"><strong>Recommendation 2</strong>:  provide pre-curated options for users to choose what’s most important for them</li>
             </ul>
           </div>
         </div>
@@ -295,16 +295,17 @@ function Detail() {
       <section className="max-w-3xl mx-auto px-8 mb-8 md:mb-12">
         <h5 className="mb-2 text-center uppercase font-bold">(8)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
-          Post Launch Redesign
+          Post-Launch Redesign
         </h2>
         <p className="font-serif">
-          Based on user survey and testing feedback, I went through a few rounds of lo-fi and hi-fi design
-          iterations to explore solutions that would provide better guidance and recommendations for our users.
+          Based on user survey and research feedback, I explored a few iterations of lo-fi and hi-fi design
+           solutions to provide better guidance and recommendations for users. I also redesigned the Gusto visual design system
+           with designers from other Gusto products and updated the Benefits flows including this renewal flow.
         </p>
         <ul className='my-8 md:mb-12 font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
           <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
           <li className="mb-2"><strong>Solution 1</strong>: more granular and tailored questions at the survey step</li>
-          <li className="mb-2"><strong>Solution 2</strong>: add a review step for users to review the cost of their current plans before they select plans</li>
+          <li className="mb-2"><strong>Solution 2</strong>: add a review step for users to review existing plan costs before they select renewal plans</li>
           <li className="mb-2"><strong>Solution 3</strong>: more plan options and better presentation of their plan details</li>
         </ul>
       </section>
@@ -333,20 +334,20 @@ function Detail() {
       <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(9)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
-          Redesign User Research
+          Redesign Validation
         </h2>
         <p className="font-serif">
-          I created a clickable prototype from all the final visual design explorations and tested a few options with 7 users.
-          The results were very positive and validated our assumptions for increasing the perceived guidance,
+          I created clickable prototypes for final visual and interaction design options and tested a few with 7 users.
+          The results were very positive and validated the design's effectiveness to provide better guidance,
           flexibility and plan options.
         </p>
         <div className="flex flex-col md:flex-row justify-between mt-8 md:mt-16 mb-24">
           <div className="md:w-2/3 mb-8 md:pr-16">
             <ul className='font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
               <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
-              <li className="mb-2"><strong>Insight 1</strong>: all users liked the new plan summary to help them see their previous plan at a glance</li>
-              <li className="mb-2"><strong>Insight 2</strong>: most users did not want to compare plans upfront and preferred the guided packages from Gusto</li>
-              <li className="mb-2"><strong>Insight 3</strong>: most users found the new package design helped them understand the plan packages well</li>
+              <li className="mb-2"><strong>Takeaway 1</strong>: all users liked the new plan summary to help them see their previous plan at a glance</li>
+              <li className="mb-2"><strong>Takeaway 2</strong>: most users did not want to compare plans upfront and preferred the guided packages from Gusto</li>
+              <li className="mb-2"><strong>Takeaway 3</strong>: most users found the new package design helped them understand the plan packages well</li>
             </ul>
           </div>
           <ScrollAnimation animateIn='fadeInUp' className="md:w-1/3 mb-8 md:pr-8">
@@ -361,12 +362,20 @@ function Detail() {
 function Pagination() {
   return (
     <section>
-      <ul className="max-w-6xl mx-auto p-16 flex flex-row justify-between">
+      <ul className="max-w-6xl mx-auto py-16 px-4 md:px-16 flex flex-row justify-between">
         <li>
-          <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/facebook">Prev</Link>
+          <Link className="py-2 mx-3 text-sm hover:line-through" to="/facebook">← Previous </Link>
         </li>
         <li>
-          <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/quantcast">Next</Link>
+          <Link className="py-2 mx-3 text-sm hover:line-through" to="/quantcast">Next →</Link>
+        </li>
+      </ul>
+      <ul id="pagination" className="hidden md:flex w-full px-4 lg:px-8 mx-auto text-gray-900 half fixed flex-row justify-between">
+        <li className="rotate">
+          <Link className="py-1 px-2 bg-white rounded-xl opacity-75 hover:opacity-100 text-sm hover:font-semibold" to="/facebook">( Prev )</Link>
+        </li>
+        <li className="rotate rotate-90">
+          <Link className="py-1 px-2 bg-white rounded-xl opacity-75 hover:opacity-100 text-sm hover:font-semibold" to="/quantcast">( Next )</Link>
         </li>
       </ul>
     </section>

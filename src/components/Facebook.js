@@ -73,9 +73,9 @@ function Intro() {
       <div className="md:max-w-3xl mx-auto px-8">
         <h3 className="mt-16 mb-2 text-center md:text-lg font-bold">Case Study</h3>
         <h1 className="mb-4 md:mx-8 text-center text-3xl md:text-6xl font-bold leading-tight">Facebook Pages Mobile Redesign</h1>
-        <h3 className="my-16 text-center uppercase text-sm text-gray-600">UI | UX | Product Thinking</h3>
+        <h3 className="my-16 text-center uppercase text-sm text-gray-600">UI | UX | Product Strategy</h3>
         <p className="font-serif">Facebook Pages help 90 million small businesses  engage with their customers and communities.
-        This consumer mobile redesign enables Pages to be the best presence for a business, and helps people connect,
+        This consumer mobile redesign enables Pages to be the best presence for a business and helps people connect,
         communicate and transact with business owners. The resulting design framework allows Pages partner teams to optimize for
         their divergent use cases and goals.
         </p>
@@ -113,7 +113,7 @@ function Detail() {
               (<a
                 href="https://techcrunch.com/2018/08/06/facebook-business-pages/"
                 target="_blank"
-                className="hover:text-gray-900 border-b border-dotted border-gray-900"
+                className="font-medium border-b border-dotted border-gray-900"
                 rel="noopener noreferrer"
                 >read more
               </a>)
@@ -196,7 +196,7 @@ function Detail() {
       <section className="max-w-3xl mx-auto px-8">
         <h5 className="mb-2 text-center uppercase font-bold">(3)</h5>
         <h2 className="mb-16 text-center text-3xl font-bold leading-tight">
-          Cross-team Alignment
+          Cross-Team Alignment
         </h2>
         <p className="font-serif">I collaborated with Facebook Design Systems and other entity teams to create a consistent entity
            header area across Facebook (e.g. Profile, Events, Marketplace, Groups).</p>
@@ -301,7 +301,7 @@ function Detail() {
         <ul className='mt-8 font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
           <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
           <li className="mb-2">Optimized consideration signals, social context, and transactional needs for local businesses</li>
-          <li className="mb-2">Optimized for visual content and discovery of the most relevant information</li>
+          <li className="mb-2">Prioritized visual content and discovery of the most relevant information</li>
           <li className="mb-2">The system is simple and flexible while on brand and consistent with other Facebook experiences</li>
         </ul>
       </section>
@@ -342,10 +342,10 @@ function Detail() {
         </p>
         <ul className='mt-8 font-serif text-gray-800 text-sm border-l pl-4 leading-more'>
           <li className="text-lg italic mb-2"><strong>e.g.</strong></li>
-          <li className="mb-2">Highlights to help people stay updated to small businesses they follow</li>
-          <li className="mb-2">About to help people understand what this business has to offer</li>
-          <li className="mb-2">Ratings and reviews to provide the most important considration signals</li>
-          <li className="mb-2">Menu to help people decide if this business is right for them</li>
+          <li className="mb-2"><b>Highlights</b> to help people stay updated to small businesses they follow</li>
+          <li className="mb-2"><b>About</b> to help people understand what this business has to offer</li>
+          <li className="mb-2"><b>Ratings</b> and reviews to provide the most important considration signals</li>
+          <li className="mb-2"><b>Menu</b> to help people decide if this business is right for them</li>
         </ul>
       </section>
       <section className="mb-32 md:bg-blue-100 pt-16 md:pt-24 md:pb-16 md:overflow-hidden">
@@ -406,11 +406,11 @@ function Detail() {
               <li className="mb-2">Media Experience (Cover, Photos, Videos)</li>
               <li className="mb-2">About Card</li>
               <li className="mb-2">Header Details</li>
-              <li className="mb-2">Highlights - Co-owned</li>
-              <li className="mb-2">Related Pages - Co-owned</li>
-              <li className="mb-2">Recommendations - Co-owned</li>
-              <li className="mb-2">Menu - Design Partner</li>
-              <li className="mb-2">Posts - Design Partner</li>
+              <li className="mb-2">Highlights - <i>Co-owned</i></li>
+              <li className="mb-2">Related Pages - <i>Co-owned</i></li>
+              <li className="mb-2">Recommendations - <i>Co-owned</i></li>
+              <li className="mb-2">Menu - <i>Design Partner</i></li>
+              <li className="mb-2">Posts - <i>Design Partner</i></li>
             </ul>
           </div>
         </div>
@@ -456,12 +456,20 @@ function Detail() {
 function Pagination() {
   return (
     <section>
-      <ul className="max-w-6xl mx-auto p-16 flex flex-row justify-between">
+      <ul className="max-w-6xl mx-auto py-16 px-4 md:px-16 flex flex-row justify-between">
         <li>
-          <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/">Prev</Link>
+          <Link className="py-2 mx-3 text-sm hover:line-through" to="/quantcast">← Previous</Link>
         </li>
         <li>
-          <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/gusto">Next</Link>
+          <Link className="py-2 mx-3 text-sm hover:line-through" to="/gusto">Next →</Link>
+        </li>
+      </ul>
+      <ul id="pagination" className="hidden md:flex w-full px-4 lg:px-8 mx-auto text-gray-900 half fixed flex-row justify-between">
+        <li className="rotate">
+          <Link className="py-1 px-2 bg-white rounded-xl opacity-75 hover:opacity-100 text-sm hover:font-semibold" to="/quantcast">( Prev )</Link>
+        </li>
+        <li className="rotate rotate-90">
+          <Link className="py-1 px-2 bg-white rounded-xl opacity-75 hover:opacity-100 text-sm hover:font-semibold" to="/gusto">( Next )</Link>
         </li>
       </ul>
     </section>

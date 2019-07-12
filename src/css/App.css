@@ -1,4 +1,63 @@
+.rotate {
+  margin-left: 0px;
+  opacity: 1;
+  transition:.2s;
+  transform: rotate(-90deg);
 
+  /* Legacy vendor prefixes that you probably don't need... */
+
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+
+  /* IE */
+  -ms-transform: rotate(-90deg);
+
+  /* Opera */
+  -o-transform: rotate(-90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+.hide .rotate {
+  margin-left:-5rem;
+  opacity: 0.1;
+}
+.hide .rotate.rotate-90 {
+  margin-right: -5rem;
+  opacity: 0.1;
+}
+.rotate.rotate-90 {
+  margin-right: 0px;
+  opacity: 1;
+  transition:.2s;
+  transform: rotate(90deg);
+
+  /* Legacy vendor prefixes that you probably don't need... */
+
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+
+  /* IE */
+  -ms-transform: rotate(90deg);
+
+  /* Opera */
+  -o-transform: rotate(90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+.half {
+  bottom:50%;
+  margin-bottom: -1rem;
+}
 .phone {
   border-radius: 2rem;
   border: 1rem solid #F7FAFC;

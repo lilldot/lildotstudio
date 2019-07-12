@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import logo from '../img/logo.svg'; //02, 04, 07, 08
 import { CSSTransitionGroup } from 'react-transition-group'
@@ -28,7 +28,7 @@ export default class Header extends React.Component {
               <Link className="py-2 mx-3 uppercase tracking-wide underline" to="/">Home</Link>
             </li>
             <li className="relative" onMouseLeave={this.handleLeave}>
-              <Link onMouseEnter={this.handleHover} className="py-2 mx-3 uppercase tracking-wide underline" to="/facebook">Case Study</Link>
+              <Link onMouseEnter={this.handleHover} className="py-2 mx-3 uppercase tracking-wide underline" to="/facebook">Case Studies</Link>
               <div className="submenu-container overflow-hidden">
                 <CSSTransitionGroup
                   transitionName="slide"
@@ -69,8 +69,8 @@ export default class Header extends React.Component {
           <Link className="flex items-center fadeInDown faster animated py-3 px-4 hover:text-gray-900 hover:line-through focus:bg-gray-100" to="/gusto">
             <span>Gusto</span><span className="ml-2 text-xs uppercase text-gray-600">Case Study</span>
           </Link>
-          <a className="fadeInDown faster animated py-3 px-4 hover:text-gray-900 hover:line-through focus:bg-gray-100" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/klreyes/">LinkedIn</a>
-          <Link className="fadeInDown faster animated pt-3 pb-8 px-4 hover:text-gray-900 hover:line-through focus:bg-gray-100 border-b-2 border-black" to="/about">About</Link>
+          <Link className="fadeInDown faster animated py-3 px-4 hover:text-gray-900 hover:line-through focus:bg-gray-100" to="/about">About</Link>
+          <a className="fadeInDown faster animated pt-3 pb-8 px-4 hover:text-gray-900 hover:line-through focus:bg-gray-100 border-b-2 border-black" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/klreyes/">LinkedIn</a>
           {/* <a className="fadeInDown faster animated pt-3 pb-8 px-4 hover:text-gray-900 hover:line-through focus:bg-gray-100 border-b-2 border-black" href="mailto:klong128@gmail.com">Hire Me</a> */}
         </div>
       </header>
